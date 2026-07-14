@@ -1,0 +1,12 @@
+test,passed,observed,expected
+GSE152004 state sizes sum == 695,TRUE,695,695
+GSE118761 nasal projection sizes sum == 55,TRUE,55,55
+GSE118761 tracheal projection sizes sum == 49,TRUE,49,49
+Hospital full cohort == 325,TRUE,325,325
+Hospital asthma subgroup == 158,TRUE,158,158
+Frequent exacerbation events == 79 among asthma,TRUE,79,79
+Clinical T2-high == 162,TRUE,162,162
+GSE152004 strict > median high count,TRUE,347,347
+Privacy-safe analysis subject ID unique,TRUE,unique row-order analysis IDs,unique
+Source patient number unique but not exported,TRUE,unique=TRUE; exported=FALSE,unique=TRUE; exported=FALSE
+Regular ICS use column present,TRUE,present; users=155,present

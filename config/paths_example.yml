@@ -1,0 +1,14 @@
+public_data:
+  GSE18965: "data/public/GSE18965/"
+  GSE118761: "data/public/GSE118761/"
+  GSE152004: "data/public/GSE152004/"
+private_data:
+  hospital_deidentified_table: "data/private/hospital_deidentified.csv"
+outputs:
+  manuscript_locked: "outputs/manuscript_locked/"
+  audit_reruns: "outputs/audit_reruns/"
+  user_rerun: "outputs/user_rerun/"
+notes:
+  - "Use only relative paths in repository code and configuration."
+  - "Do not commit protected hospital patient-level data."
+  - "The private hospital table path is an example for authorized local reruns only."

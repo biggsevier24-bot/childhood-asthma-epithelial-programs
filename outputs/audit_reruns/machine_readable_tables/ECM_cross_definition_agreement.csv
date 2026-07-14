@@ -1,0 +1,4 @@
+comparison,ARI,definition
+fixed32_vs_Reactome,0.716989729097824,sensitivity cluster assignment agreement
+fixed32_vs_NABA,0.602583145107948,sensitivity cluster assignment agreement
+Reactome_vs_NABA,0.581070374577995,sensitivity cluster assignment agreement

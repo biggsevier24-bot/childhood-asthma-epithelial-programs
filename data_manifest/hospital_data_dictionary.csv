@@ -1,0 +1,13 @@
+variable_name,description,type,permitted_values,unit,analysis_role,missing_value_code
+sample_id,De-identified local analysis identifier,string,"non-identifying unique value",none,row identifier,NA
+sex,Sex recorded for model adjustment,categorical,"female; male",none,covariate,NA
+age,Age at assessment,numeric,non-negative,years,covariate,NA
+asthma,Physician-diagnosed asthma,binary,"0=no; 1=yes",none,primary clinical outcome,NA
+previous_wheeze_count,Prior wheezing episode count,numeric,non-negative episodes,count,count outcome,NA
+exacerbation_count_including_index,Acute exacerbation count in previous 12 months including index event,numeric,non-negative episodes,count,asthma-subgroup count outcome,NA
+atopy_clinical,Any allergic rhinitis eczema or food allergy,binary,"0=no; 1=yes",none,clinical descriptor,NA
+total_IgE,Total IgE,numeric,non-negative,IU/mL,clinical T2 score component,NA
+blood_eosinophil_percent,Blood eosinophil percentage,numeric,0-100,percent,clinical T2 score component,NA
+objective_sensitization,sIgE or skin-prick-test positivity,binary,"0=no; 1=yes",none,clinical T2 score component,NA
+URI_trigger_major,Upper respiratory infection as major trigger,binary,"0=no; 1=yes",none,clinical descriptor,NA
+regular_ICS_use_before_sampling,Regular inhaled corticosteroid use before sampling,binary,"0=no; 1=yes",none,sensitivity covariate,NA

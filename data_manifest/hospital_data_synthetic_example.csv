@@ -1,0 +1,13 @@
+sample_id,sex,age,asthma,previous_wheeze_count,exacerbation_count_including_index,atopy_clinical,total_IgE,blood_eosinophil_percent,objective_sensitization,URI_trigger_major,regular_ICS_use_before_sampling,data_status
+SYN001,male,6,1,3,2,1,180,4.2,1,1,0,SYNTHETIC DATA
+SYN002,female,9,0,1,0,0,42,1.1,0,0,0,SYNTHETIC DATA
+SYN003,male,12,1,4,3,1,310,6.5,1,1,1,SYNTHETIC DATA
+SYN004,female,7,0,0,0,0,25,0.8,0,0,0,SYNTHETIC DATA
+SYN005,male,10,1,2,1,0,95,2.5,1,0,0,SYNTHETIC DATA
+SYN006,female,5,1,5,4,1,420,8.3,1,1,1,SYNTHETIC DATA
+SYN007,male,8,0,1,0,1,130,3.0,0,1,0,SYNTHETIC DATA
+SYN008,female,13,1,3,2,0,70,1.9,1,0,1,SYNTHETIC DATA
+SYN009,male,11,0,0,0,0,35,0.7,0,0,0,SYNTHETIC DATA
+SYN010,female,6,1,2,3,1,260,5.4,1,1,0,SYNTHETIC DATA
+SYN011,male,14,0,1,0,1,110,2.2,0,0,0,SYNTHETIC DATA
+SYN012,female,9,1,4,1,1,390,7.1,1,1,1,SYNTHETIC DATA

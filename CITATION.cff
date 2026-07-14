@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the manuscript and archived code release."
+title: "Type 2, Interferon, and Repair-ECM Programs Characterize Airway Epithelial Heterogeneity in Childhood Asthma"
+version: "1.0.0"
+date-released: "2026-07-14"
+authors:
+  - family-names: "Zhang"
+    given-names: "Yu-xiang"
+  - family-names: "Miao"
+    given-names: "Yu"
+  - family-names: "Xue"
+    given-names: "Jiating"
+  - family-names: "Wang"
+    given-names: "Nana"
+  - family-names: "Hao"
+    given-names: "Chuangli"
+license: "MIT"

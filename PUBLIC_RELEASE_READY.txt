@@ -1,0 +1,12 @@
+Repository name: childhood-asthma-epithelial-programs
+Version: v1.0.0
+Preparation date: 2026-07-14
+Number of code files: 16
+Final documentation wording corrected: yes
+No analysis was rerun: yes
+No manuscript-locked values were modified: yes
+Security scan status: PASS
+Security scan passed: yes
+Items the user must replace manually:
+- Add the real GitHub URL after creating the repository.
+- Add the real Zenodo DOI after the first Zenodo archive creates it.

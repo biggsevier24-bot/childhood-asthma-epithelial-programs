@@ -1,0 +1,94 @@
+schema_version: 1
+workflow_name: repair_ECM_revision_era_calibrated_reconstruction
+status: frozen
+input:
+  dataset: GSE18965
+  expression_branch: deposited_log2_series_matrix
+  platform: GPL96
+  sample_groups:
+    AA: 9
+    HN: 7
+  effect_direction: AA_minus_HN
+probe_to_gene:
+  gene_symbol_field: Gene Symbol
+  exclude_missing_or_multi_symbol_annotations: true
+  collapse_rule: highest_mean_expression_across_all_16_samples
+  exact_tie_rule: lexical_probe_id
+annotation:
+  go_biological_process:
+    - GO:0030198
+    - GO:0030199
+    - GO:0042060
+    - GO:0007155
+  hgnc_families:
+    - collagen
+    - integrin
+    - laminin
+    - MMP
+  matricellular_source: fixed_revision_era_panel_v1
+candidate_pool:
+  rule: GO_any AND (family_any OR collagen_fibril_organization)
+  expected_n: 140
+feature_cluster:
+  correlation: Pearson_absolute
+  distance: 1_minus_absolute_r
+  linkage: average
+  tree_cut_height: 0.65
+  eligibility:
+    minimum_cluster_n: 3
+    module_AA_minus_HN: greater_than_0
+    fraction_members_AA_gt_HN: at_least_0.50
+    median_within_association: at_least_0.60
+  selection_order:
+    - category_breadth_descending
+    - curated_family_fraction_descending
+    - module_score_cohen_d_descending
+    - median_within_association_descending
+    - cluster_n_descending
+    - cluster_id_ascending
+  expected_selected_n: 97
+network_prefilter:
+  correlation: Pearson_absolute
+  distance: 1_minus_absolute_r
+  linkage: average
+  tree_cut_k: 2
+  selected_cluster_rule: DENSITY_COHERENCE_EFFECT
+  seed_rule: family_any AND GO_any AND AA_minus_HN_greater_than_0
+  expected_seed_n: 73
+  initial_cluster_n: 138
+  seed_edge_threshold: 0.30
+  minimum_seed_degree_fraction: 0.30
+  expected_retained_n: 115
+final_rule:
+  discovery_model: decision_tree_gini_unweighted
+  exclude_P_and_FDR: true
+  depth: 5
+  leaves: 15
+  conditions: 14
+  positive_leaf_clauses: 8
+  unique_features: 11
+  thresholds:
+    aa_root: 0.125
+    cluster_signed_low: -0.50
+    integrin_abs_median: 0.25
+    signed_degree_040_zero_split: 0.005
+    collagen_seed_degree: 0.766194332
+    matricellular_signed_mean: 0.69
+    aa_narrow: 0.14
+    aa_high: 0.19
+    signed_degree_060: 0.77
+    mmp_signed_max: 0.939526755
+    all_signed_median: 0.838103855
+    cluster_signed_high: 0.686
+    signed_degree_030: 0.90
+  implementation: R/05_repair_ECM_final_selection_rule.R
+forbidden_operations:
+  gene_name_specific_inclusion_or_exclusion: true
+  manual_gene_addition_or_removal: true
+  top_n_truncation: true
+software:
+  R: 4.2.3
+  required_packages: base_R_only_for_derivation
+calibration_statement: >-
+  Revision-era deterministic reconstruction calibrated against the fixed
+  manuscript module membership; not the original historical derivation.

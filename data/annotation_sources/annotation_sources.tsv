@@ -1,0 +1,8 @@
+source_name	version	retrieval_date	identifier	source_url
+org.Hs.eg.db	3.16.0	2026-09-17	GO:0030198;GO:0030199;GO:0042060;GO:0007155	https://bioconductor.org/packages/org.Hs.eg.db
+GO.db	3.16.0	2026-09-17	GO:0030198;GO:0030199;GO:0042060;GO:0007155	https://bioconductor.org/packages/GO.db
+collagen	HGNC branch snapshot 2026-09-16	2026-09-16	HGNC group 490	https://www.genenames.org/cgi-bin/genegroup/download?id=490&type=branch
+integrin	HGNC branch snapshot 2026-09-16	2026-09-16	HGNC group 597	https://www.genenames.org/cgi-bin/genegroup/download?id=597&type=branch
+laminin	HGNC branch snapshot 2026-09-16	2026-09-16	HGNC group 626	https://www.genenames.org/cgi-bin/genegroup/download?id=626&type=branch
+MMP	HGNC branch snapshot 2026-09-16	2026-09-16	HGNC group 891	https://www.genenames.org/cgi-bin/genegroup/download?id=891&type=branch
+matricellular	fixed revision-era panel v1	2026-09-17	Murphy-Ullrich and Sage 2014	https://doi.org/10.1016/j.matbio.2014.07.005

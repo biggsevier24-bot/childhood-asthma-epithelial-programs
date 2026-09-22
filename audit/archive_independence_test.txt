@@ -1,0 +1,11 @@
+HISTORICAL PRE-FIGURE4-CLOSURE RECORD. Current final status is documented in tests/test_summary.tsv and audit/public_data_rebuild_validation.tsv.
+
+ARCHIVE_REQUIRED_FOR_PIPELINE = FALSE
+TEST_METHOD = clean repository copy created without archive/ and without prior primary outputs
+RUN_PUBLIC_ANALYSES = PASS
+REPOSITORY_TESTS = 13/13 PASS
+GSE18965_EXACT32 = PASS
+GSE118761_PROJECTION = PASS; nasal 21/27/7; tracheal 21/23/5
+GSE152004_PRIMARY = PASS
+EXTERNAL_ECM = PASS
+SECONDARY_GSE152004_SENSITIVITY = VERIFIED_OUTPUT_INPUT_NOT_REDISTRIBUTED

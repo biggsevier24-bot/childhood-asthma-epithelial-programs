@@ -1,0 +1,7 @@
+﻿analysis,n,predictor,adjustment,OR,CI_low,CI_high,P_value
+old_repair_only,695,repair_score_existing,none,2.2750884086,0.6855630592,7.5500381722,0.1792224984
+historical_figure6b_model,695,repair_score_existing,ifn_score_existing,3.3724522175,0.9787050122,11.620900902,0.0541170294
+historical_figure6b_IFN_term,695,ifn_score_existing,repair_score_existing,0.5498361,0.4380514,0.6901466,2.49515e-07
+old_repair_per_SD_adjusted,695,z(repair_score_existing),z(ifn_score_existing),1.163873208,0.997316552,1.3582456258,0.0541170294
+current_fixed32_per_SD_adjusted,695,z(Repair_ECM_32_score),z(current_IFN_score),0.5423094732,0.4532772817,0.6488292633,2.2639182518e-11
+intentional_wrong_positional_assignment,695,misordered_old_repair,historical IFN,0.6888443,,,

@@ -1,0 +1,18 @@
+options(stringsAsFactors = FALSE)
+script <- sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value = TRUE)[1])
+repo <- normalizePath(file.path(dirname(script), "../.."), winslash = "/", mustWork = TRUE)
+source(file.path(repo, "R/common/module_scoring.R"))
+raw <- file.path(repo, "data/public/GSE152004/raw/GSE152004_695_raw_counts.txt.gz")
+if (!file.exists(raw)) stop("Official GSE152004 raw count file is required")
+x <- read.delim(gzfile(raw), check.names = FALSE, stringsAsFactors = FALSE, row.names = 1)
+m <- as.matrix(x); storage.mode(m) <- "numeric"; rownames(m) <- toupper(rownames(m))
+if (anyDuplicated(rownames(m))) m <- rowsum(m, rownames(m), reorder = FALSE)
+cpm <- t(t(m) / colSums(m)) * 1e6
+log_cpm <- log2(cpm + 1)
+d <- read.csv(file.path(repo, "outputs/03_GSE152004/GSE152004_module_scores_recomputed.csv"), check.names = FALSE)
+log_cpm <- log_cpm[, d$sample_id, drop = FALSE]
+repair <- score_mean_expression_per_sd(log_cpm, read_gene_set(file.path(repo, "data/reference_gene_sets/repair_ECM_fixed32.txt")))
+fit <- glm(d$T2_high ~ repair + d$IFN_z, family = binomial())
+sm <- coef(summary(fit)); ci <- confint.default(fit, "repair")
+out <- data.frame(term = "alternative_repair_per_SD", OR = exp(coef(fit)["repair"]), CI_low = exp(ci[1]), CI_high = exp(ci[2]), p_value = sm["repair", "Pr(>|z|)"])
+write.csv(out, file.path(repo, "outputs/03_GSE152004/GSE152004_alternative_repair_recomputed.csv"), row.names = FALSE)

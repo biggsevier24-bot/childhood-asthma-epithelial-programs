@@ -1,0 +1,5 @@
+options(stringsAsFactors=FALSE)
+repo <- normalizePath(file.path(dirname(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value=TRUE)[1])),".."),winslash="/",mustWork=TRUE)
+required <- c("README.md","LICENSE","CITATION.cff","config/global_config.yaml","config/GSE118761_projection_final.yaml","docs/manuscript_to_code_map.tsv","docs/analysis_registry.tsv","docs/GSE118761_projection_PROVENANCE.md","figures/figure_source_map.tsv","figures/Figure5/make_Figure5f.R","tables/table_source_map.tsv","tables/make_Supplementary_Table_S9.R","audit/FULL_REPOSITORY_AUDIT.tsv","audit/GSE152004_alternative_score_reproducibility_status.tsv","analysis/03_GSE152004_primary_validation/00_download_raw_counts.R","run_public_analyses.R")
+stopifnot(all(file.exists(file.path(repo,required))))
+cat("PASS: repository structure\n")

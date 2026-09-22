@@ -1,0 +1,12 @@
+options(stringsAsFactors = FALSE)
+repo <- normalizePath(file.path(dirname(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value=TRUE)[1])), "../.."), winslash="/", mustWork=TRUE)
+source(file.path(repo,"R/common/module_scoring.R"))
+d <- read.csv(file.path(repo,"outputs/03_GSE152004/GSE152004_module_scores_recomputed.csv"),check.names=FALSE)
+fit <- glm(T2_high~repair_ECM_z+IFN_z,data=d,family=binomial())
+sm <- coef(summary(fit)); ci <- confint.default(fit)
+terms <- c("repair_ECM_z","IFN_z")
+out <- data.frame(term=terms,beta=sm[terms,"Estimate"],OR=exp(sm[terms,"Estimate"]),CI_low=exp(ci[terms,1]),CI_high=exp(ci[terms,2]),p_value=sm[terms,"Pr(>|z|)"],n=nobs(fit),events=sum(d$T2_high))
+write.csv(out,file.path(repo,"outputs/03_GSE152004/GSE152004_primary_logistic_recomputed.csv"),row.names=FALSE)
+formal <- out
+formal$term <- c("Repair_z", "IFN_z")
+write.csv(formal,file.path(repo,"outputs/03_GSE152004/GSE152004_molecular_T2_high_logistic_model.csv"),row.names=FALSE)

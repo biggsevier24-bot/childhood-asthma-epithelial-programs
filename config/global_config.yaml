@@ -1,0 +1,33 @@
+schema_version: 1
+release_version: v1.0.0
+random_seed: 20260626
+cohorts:
+  GSE18965:
+    groups: {AA: 9, HN: 7}
+    effect_direction: AA_minus_HN
+  GSE118761:
+    overall_n: 104
+    nasal_n: 55
+    tracheal_n: 49
+    primary_tissue: nasal
+    projection_config: config/GSE118761_projection_final.yaml
+    projection_method: tissue_standardized_scores_to_GSE152004_nearest_centroid
+  GSE152004:
+    n: 695
+    t2_genes: [CST1, CLCA1, SERPINB2]
+    t2_high_rule: score_greater_than_or_equal_to_cohort_median
+    expected_t2_high: 348
+    expected_t2_low: 347
+    clustering_k: 3
+    clustering_nstart: 500
+module_scores:
+  primary: mean_gene_wise_z_within_cohort_or_tissue
+  ssgsea: official_GSVA_only
+  alternative_repair: mean_log2_CPM_plus_1_without_gene_wise_standardization_reported_per_SD
+external_ecm:
+  reactome: external_sensitivity_only
+  naba_core_matrisome: external_sensitivity_only
+  permutation_seed: 20260626
+hospital:
+  run_from_public_entrypoint: false
+  patient_level_data_public: false

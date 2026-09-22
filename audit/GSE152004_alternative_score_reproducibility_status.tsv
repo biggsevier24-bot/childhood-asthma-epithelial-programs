@@ -1,0 +1,2 @@
+analysis	input_available	downloadable	rerunnable	historical_output_verified	manuscript_match	status	notes
+GSE152004 mean log2(CPM+1) fixed32 sensitivity	External cache validated; input not redistributed in release	Yes - official GEO supplementary file	Yes through documented cache variable	Yes	Yes	PASS / EXTERNAL_CACHE_VALIDATED	Final public-data rebuild reran successfully from the official cached input; retained result remains OR 1.163873208, 95% CI 0.997316552-1.3582456258, P 0.0541170294.

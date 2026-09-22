@@ -1,0 +1,15 @@
+codex_r_helper <- Sys.getenv("CODEX_R_LIB_HELPER", "")
+if (nzchar(codex_r_helper) && file.exists(codex_r_helper)) source(codex_r_helper)
+options(stringsAsFactors = FALSE)
+script <- sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value = TRUE)[1])
+repo <- normalizePath(file.path(dirname(script), ".."), winslash = "/", mustWork = TRUE)
+src <- read.delim(file.path(repo, "tables/Supplementary_Table_S9_source.tsv"), check.names = FALSE)
+write.csv(src, file.path(repo, "tables/Supplementary_Table_S9_source.csv"), row.names = FALSE)
+if (requireNamespace("openxlsx", quietly = TRUE)) {
+  wb <- openxlsx::createWorkbook()
+  openxlsx::addWorksheet(wb, "S9_projection_profiles")
+  openxlsx::writeData(wb, "S9_projection_profiles", src)
+  openxlsx::freezePane(wb, "S9_projection_profiles", firstRow = TRUE)
+  openxlsx::setColWidths(wb, "S9_projection_profiles", cols = seq_len(ncol(src)), widths = "auto")
+  openxlsx::saveWorkbook(wb, file.path(repo, "tables/Supplementary_Table_S9_source.xlsx"), overwrite = TRUE)
+}

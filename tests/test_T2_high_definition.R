@@ -1,0 +1,7 @@
+options(stringsAsFactors=FALSE)
+repo <- normalizePath(file.path(dirname(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value=TRUE)[1])),".."),winslash="/",mustWork=TRUE)
+x <- read.csv(file.path(repo,"outputs/03_GSE152004/GSE152004_molecular_T2_high_logistic_model.csv"),check.names=FALSE)
+stopifnot(unique(x$n)==695L,unique(x$events)==348L)
+code <- paste(readLines(file.path(repo,"analysis/03_GSE152004_primary_validation/02_define_T2_high.R"),warn=FALSE),collapse="\n")
+stopifnot(grepl("t2>=cut",code,fixed=TRUE))
+cat("PASS: primary T2-high definition is >= median with 348/347 split\n")

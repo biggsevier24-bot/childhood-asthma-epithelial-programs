@@ -1,0 +1,22 @@
+[
+  {
+    "path": "[MANUSCRIPT_SOURCE]/manuscript-original.docx",
+    "paragraph_count": 154,
+    "table_count": 0
+  },
+  {
+    "path": "[MANUSCRIPT_SOURCE]/figure legend.docx",
+    "paragraph_count": 39,
+    "table_count": 0
+  },
+  {
+    "path": "[MANUSCRIPT_SOURCE]/table.docx",
+    "paragraph_count": 6,
+    "table_count": 3
+  },
+  {
+    "path": "[MANUSCRIPT_SOURCE]/supplement-table_8.20.docx",
+    "paragraph_count": 26,
+    "table_count": 13
+  }
+]

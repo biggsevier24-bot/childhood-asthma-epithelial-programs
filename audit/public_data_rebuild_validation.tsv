@@ -1,0 +1,17 @@
+item	status	evidence
+Figure4_PCA_runtime	PASS	Dedicated runtime reproduction completed
+Figure4_locked_correlations	PASS	PC1-IFN; PC3-T2; PC6-repair-ECM; PC7-atopy; PC9-asthma/wheeze
+complete_test_suite	PASS	14/14 tests
+run_public_analyses	PASS	exit code 0
+GSE18965_exact32	PASS	completed
+GSE118761_public_input_rebuild	PASS	official GEO files supplied through external cache variables
+GSE152004_public_input_rebuild	PASS	official GEO files supplied through external cache variables
+GSE152004_score_construction_sensitivity	PASS	official cached raw-count input
+GSE118761_projection_preparation	PASS	completed
+GSE118761_projection_deliverables	PASS	completed
+External_ECM	PASS	completed
+Hospital_cohort	CODE_ONLY	protected patient-level data not public
+GSE118761_genecounts.csv.gz	EXTERNAL_NOT_REDISTRIBUTED	SHA256 447b8ba68c44899f374e075c043990be06b0b4312844b6464c323b801b70f8ba
+GSE118761_series_matrix.txt.gz	EXTERNAL_NOT_REDISTRIBUTED	SHA256 317d8a8fbd111d40a4a9d9fadeba3a743678dab54aae04aa7947016eb2b77baa
+GSE152004_695_raw_counts.txt.gz	EXTERNAL_NOT_REDISTRIBUTED	SHA256 191d58492220b40d48abd9eacb3ea3780c76c7ec4a6621c96a59f7c8d9542e16
+GSE152004_series_matrix.txt.gz	EXTERNAL_NOT_REDISTRIBUTED	SHA256 e55068afd009f2a2ddad8ee527a4cf828d6f5812d312018ab5bc79d3db234aeb

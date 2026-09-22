@@ -1,0 +1,5 @@
+Using the fully executable nearest-centroid workflow, GSE118761 nasal samples were assigned to E1, E2, and E3 as reported in GSE118761_projection_counts_FINAL.tsv.
+Nasal atopy: E1 85.7% (18/21), E2 29.6% (8/27), E3 28.6% (2/7).
+Nasal asthma: E1 57.1% (12/21), E2 37.0% (10/27), E3 71.4% (5/7).
+Nasal wheeze: E1 57.1% (12/21), E2 37.0% (10/27), E3 71.4% (5/7).
+These projection results are exploratory and do not constitute formal external validation of clinical endotypes.

@@ -1,0 +1,7 @@
+result	manuscript_value	rerun_value	absolute_difference	possible_reason	action_required
+GSE152004 historical strict-median branch T2-high n	348	347	1	Stale branch used > median rather than >= median	Use locked >= median branch; stale output is not primary
+GSE152004 primary repair OR	0.542309	0.542309	0	Locked Methods-consistent branch agrees	None
+GSE152004 primary IFN OR	0.770618	0.770618	0	Locked Methods-consistent branch agrees	None
+GSE152004 k3 counts	338/299/58	338/299/58	0	Locked reference output agrees	None
+GSE118761 nasal projection counts	superseded aggregate archived	21/27/7	NA	Final sample-level nearest-centroid workflow is locked and rerunnable	None; status RESOLVED/PASS
+GSE118761 tracheal projection counts	superseded aggregate archived	21/23/5	NA	Final sample-level nearest-centroid workflow is locked and rerunnable	None; status RESOLVED/PASS

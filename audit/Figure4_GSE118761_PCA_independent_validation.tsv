@@ -1,0 +1,22 @@
+check	pass	detail
+exact32_n	True	n=32
+exact32_match	True	DERIVED_N=32, OVERLAP_N=32
+GSE152004_n695	True	n=[695]
+GSE152004_events348	True	events=[348]
+GSE152004_repair_OR	True	OR=0.542309473212322
+GSE152004_IFN_OR	True	OR=0.770617570602221
+GSE152004_states	True	counts=[338, 299, 58]
+alternative_repair_OR	True	OR=1.163873208
+GSE118761_sample_counts	True	n=104, nasal=55, tracheal=49
+projection_nasal	True	{'E1': 21, 'E2': 27, 'E3': 7}
+projection_tracheal	True	{'E1': 21, 'E2': 23, 'E3': 5}
+Figure4_PC1_IFN	True	rho=0.7150793650793653
+Figure4_PC3_T2	True	rho=-0.6085858585858587
+Figure4_PC6_repair_ECM	True	rho=0.2993506493506493
+Figure4_PC7_atopy	True	rho=0.4513412818664931
+Figure4_PC9_asthma	True	rho=0.2543090471430494
+Figure4_PC9_wheeze	True	rho=0.2543090471430494
+Figure4_corr_rows	True	rows=60
+Figure4_score_rows	True	rows=55, cols=12
+nasal_asthma_wheeze_identical	True	identical coding
+no_obvious_hospital_raw_data	True	data/clinical_template/hospital_data_dictionary.csv; data/clinical_template/hospital_data_synthetic_example.csv

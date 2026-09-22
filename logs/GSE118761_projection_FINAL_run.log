@@ -1,0 +1,49 @@
+2026-09-19 00:51:46 +0800 START 01_prepare_projection_inputs.R 
+2026-09-19 00:51:49 +0800 INPUT data/public/GSE118761/GSE118761_VST_gene_expression.csv a7adaba7e91a40ab4a23f629f55704f366a8f7dd31e8cdccebd2186e93c896dd 
+2026-09-19 00:51:49 +0800 INPUT data/public/GSE118761/GSE118761_metadata.csv 14be86d2f20ef6b2a5db08b68bee8d16fdcd07af64c27a7daa96bc0f19476c34 
+2026-09-19 00:51:49 +0800 INPUT outputs/03_GSE152004/GSE152004_module_scores_recomputed.csv 30d87d69c59c6768c4a4ef8bb9298c4cae749d5eafdd96cae9a7a2a99c4239b3 
+2026-09-19 00:51:49 +0800 INPUT outputs/03_GSE152004/GSE152004_k3_assignments_recomputed.csv c88b72e00bd02aafb0993842050e4ca00e02b7651bc33a9f7801182d11c7dbff 
+2026-09-19 00:51:49 +0800 INPUT data/reference_gene_sets/T2_fixed3.txt c3ba3024bb59568d00b5b20b002b1c5eef4fe0f2f145a902ca7e1a26275625a6 
+2026-09-19 00:51:49 +0800 INPUT data/reference_gene_sets/IFN_fixed50.txt ce4bded278961de6b5abaf8b7498edc48f39e59eba4f1b22a29092ac2313ce2d 
+2026-09-19 00:51:49 +0800 INPUT data/reference_gene_sets/repair_ECM_fixed32.txt 0978ba644f31e1f88bf9c15b963bce3a1c44bef7c0c746373194750b3151db2f 
+2026-09-19 00:51:49 +0800 SAMPLES total=104 nasal=55 tracheal=49 duplicates=0 
+2026-09-19 00:51:49 +0800 END 01_prepare_projection_inputs.R 
+2026-09-19 00:51:49 +0800 START 02_calculate_projection_features.R 
+2026-09-19 00:51:49 +0800 SCORING gene-wise z across all 104 samples; projection z within tissue 
+2026-09-19 00:51:49 +0800 END 02_calculate_projection_features.R 
+2026-09-19 00:51:50 +0800 START 03_build_reference_centroids.R 
+2026-09-19 00:51:50 +0800 CENTROID E1 n= 338 T2= 0.82437483844 IFN= -0.360145382054 repair= -0.445869453286 
+2026-09-19 00:51:50 +0800 CENTROID E2 n= 299 T2= -0.91570860342 IFN= -0.0919169403663 repair= 0.350098556067 
+2026-09-19 00:51:50 +0800 CENTROID E3 n= 58 T2= -0.0834797063861 IFN= 2.57262593627 repair= 0.7935242577 
+2026-09-19 00:51:50 +0800 END 03_build_reference_centroids.R 
+2026-09-19 00:51:50 +0800 START 04_assign_nearest_centroid.R 
+2026-09-19 00:51:50 +0800 DISTANCE Euclidean; feature order T2, IFN, repair; tie order E1,E2,E3 
+2026-09-19 00:51:50 +0800 END 04_assign_nearest_centroid.R 
+2026-09-19 00:51:51 +0800 START 05_summarize_projection_counts.R 
+2026-09-19 00:51:51 +0800 FINAL_COUNTS nasal:E1:21;nasal:E2:27;nasal:E3:7;tracheal:E1:21;tracheal:E2:23;tracheal:E3:5 
+2026-09-19 00:51:51 +0800 END 05_summarize_projection_counts.R 
+2026-09-19 00:51:51 +0800 START 06_summarize_projection_phenotypes.R 
+2026-09-19 00:51:51 +0800 PHENOTYPES recalculated from final sample assignments 
+2026-09-19 00:51:51 +0800 END 06_summarize_projection_phenotypes.R 
+2026-09-19 00:51:52 +0800 START 07_generate_projection_source_data.R 
+2026-09-19 00:51:52 +0800 SOURCE_DATA Figure5f and Supplementary Table S9 rebuilt 
+2026-09-19 00:51:52 +0800 END 07_generate_projection_source_data.R 
+2026-09-19 00:51:52 +0800 START 08_verify_projection_results.R 
+2026-09-19 00:51:52 +0800 SESSION_INFO_BEGIN 
+R version 4.2.3 (2023-03-15 ucrt)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 26200)
+
+Matrix products: default
+
+locale:
+[1] C
+system code page: 65001
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+[1] compiler_4.2.3 yaml_2.3.7     digest_0.6.31  
+2026-09-19 00:51:52 +0800 SESSION_INFO_END 
+2026-09-19 00:51:52 +0800 END 08_verify_projection_results.R PASS 

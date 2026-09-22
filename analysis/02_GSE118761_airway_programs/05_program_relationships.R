@@ -1,0 +1,6 @@
+options(stringsAsFactors = FALSE)
+repo <- normalizePath(file.path(dirname(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value=TRUE)[1])), "../.."), winslash="/", mustWork=TRUE)
+d <- read.csv(file.path(repo,"outputs/02_GSE118761/GSE118761_recomputed_module_scores.csv"),check.names=FALSE)
+out <- do.call(rbind,lapply(c("nasal","tracheal"),function(t){x<-d[tolower(d$tissue)==t,c("T2_z","IFN_z","repair_ECM_z")]; cbind(tissue=t,as.data.frame(as.table(cor(x,use="pairwise.complete.obs",method="pearson"))))}))
+names(out)[2:4]<-c("score1","score2","pearson_r")
+write.csv(out,file.path(repo,"outputs/02_GSE118761/GSE118761_program_correlations_recomputed.csv"),row.names=FALSE)

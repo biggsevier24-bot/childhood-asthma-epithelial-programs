@@ -1,6 +1,0 @@
-name: final_locked_analysis
-channels: [conda-forge]
-dependencies:
-  - r-base
-  - python
-

@@ -1,0 +1,12 @@
+[1] "LC_COLLATE=Chinese (Simplified)_China.utf8;LC_CTYPE=Chinese (Simplified)_China.utf8;LC_MONETARY=Chinese (Simplified)_China.utf8;LC_NUMERIC=C;LC_TIME=Chinese (Simplified)_China.utf8"
+2026-09-18 09:05:44 | Reading deposited GSE18965 Series Matrix 
+Warning message:
+In for (i in (1L:cols)[do]) { :
+  closing unused connection 3 ([LOCAL_WORKSPACE]/data/GSE18965/GSE18965_series_matrix.txt.gz)
+2026-09-18 09:05:45 | Parsing GPL96 and retaining highest-mean probe per gene 
+2026-09-18 09:05:46 | Constructing 140-gene biologically annotated candidate pool 
+2026-09-18 09:05:46 | Generating expression and Pearson features 
+2026-09-18 09:05:46 | Applying frozen network prefilter and generating rule features 
+2026-09-18 09:05:46 | Applying frozen explicit if/else selection rule 
+2026-09-18 09:05:47 | Derivation complete: FINAL_N=32 
+FINAL_N = 32

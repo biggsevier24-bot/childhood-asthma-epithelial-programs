@@ -1,0 +1,5 @@
+options(stringsAsFactors = FALSE)
+repo <- normalizePath(file.path(dirname(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value=TRUE)[1])), "../.."), winslash="/", mustWork=TRUE)
+d <- read.csv(file.path(repo,"outputs/02_GSE118761/GSE118761_recomputed_module_scores.csv"), check.names=FALSE)
+out <- do.call(rbind,lapply(c("nasal","tracheal"),function(t){x<-d[tolower(d$tissue)==t,]; data.frame(tissue=t,n=nrow(x),mean_T2=mean(x$T2_z),mean_IFN=mean(x$IFN_z),mean_repair_ECM=mean(x$repair_ECM_z))}))
+write.csv(out,file.path(repo,"outputs/02_GSE118761/GSE118761_tissue_summary_recomputed.csv"),row.names=FALSE)

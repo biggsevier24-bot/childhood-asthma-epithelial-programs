@@ -1,0 +1,2 @@
+search_id	feature_set	max_depth	min_samples_leaf	criterion	class_weights	exact_match	TP	FP	FN	TN	final_n	overlap_n	false_negative_n	false_positive_n	false_negatives	false_positives	tree_depth	number_of_leaves	number_of_conditions	number_of_clauses	positive_path_conditions	unique_features_used
+TREE025	EXCLUDE_P_FDR	5	1	gini	none	TRUE	32	0	0	83	32	32	0	0			5	15	14	8	32	11

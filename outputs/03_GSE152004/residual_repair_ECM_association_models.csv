@@ -1,0 +1,6 @@
+"cohort","tissue","residual_repair_ECM_association_outcome","model_formula","model_n","OR","CI_low","CI_high","P","model_note"
+"GSE152004","nasal","T2_high","T2_high ~ repair_ECM_resid_z + IFN",695,0.933792233272148,0.802772810048281,1.0861951526073,0.374495332151195,"GSE152004 age/sex unavailable in the manuscript-locked score file; model adjusted for IFN only."
+"GSE118761","nasal","atopy","atopy ~ repair_ECM_resid_z + IFN + age + sex",55,0.933218189568138,0.52780807606465,1.65002437218137,0.812112264836699,"Nasal primary GSE118761 model adjusted for IFN, age, and sex."
+"GSE118761","nasal","asthma","asthma ~ repair_ECM_resid_z + IFN + age + sex",55,0.999798675813109,0.553855535087276,1.8047980544243,0.999466903868799,"Nasal primary GSE118761 model adjusted for IFN, age, and sex."
+"GSE118761","tracheal","atopy","atopy ~ repair_ECM_resid_z + IFN + age + sex",49,1.4959987499512,0.770108982297711,2.90609811247516,0.234463504628034,"Tracheal tissue-sensitivity GSE118761 model adjusted for IFN, age, and sex."
+"GSE118761","tracheal","asthma","asthma ~ repair_ECM_resid_z + IFN + age + sex",49,1.04558574775713,0.556849544806003,1.96327637529758,0.889705754759467,"Tracheal tissue-sensitivity GSE118761 model adjusted for IFN, age, and sex."

@@ -1,0 +1,9 @@
+analysis	status	key_result	expected	match
+GSE18965 exact32	PASS	completed	successful execution	TRUE
+GSE118761	PASS	completed	successful execution	TRUE
+GSE152004	PASS	completed	successful execution	TRUE
+GSE152004 score construction sensitivity	VERIFIED_OUTPUT_INPUT_NOT_REDISTRIBUTED	retained machine-readable output verified	secondary sensitivity; official raw-count URL and download script provided	TRUE
+GSE118761 projection	PASS	completed	successful execution	TRUE
+GSE118761 projection deliverables	PASS	completed	successful execution	TRUE
+External ECM	PASS	completed	successful execution	TRUE
+Hospital cohort	CODE_ONLY	protected patient-level data not public	code and schema only	TRUE

@@ -1,0 +1,94 @@
+FINAL RELEASE FULL CLEAN RERUN
+START=
+2026-09-19T00:51:17
+ARCHIVE_PRESENT=
+False
+PREEXISTING_OUTPUT_FILES=1 (verified secondary sensitivity reference only)
+PUBLIC_STANDARDIZED_INPUT_FILES=4
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+R library initialized from the configured local environment
+                                  analysis
+1                         GSE18965 exact32
+2                                GSE118761
+3                                GSE152004
+4 GSE152004 score construction sensitivity
+5                     GSE118761 projection
+6        GSE118761 projection deliverables
+7                             External ECM
+8                          Hospital cohort
+                                   status
+1                                    PASS
+2                                    PASS
+3                                    PASS
+4 VERIFIED_OUTPUT_INPUT_NOT_REDISTRIBUTED
+5                                    PASS
+6                                    PASS
+7                                    PASS
+8                               CODE_ONLY
+                                 key_result
+1                                 completed
+2                                 completed
+3                                 completed
+4 retained machine-readable output verified
+5                                 completed
+6                                 completed
+7                                 completed
+8   protected patient-level data not public
+                                                                    expected
+1                                                       successful execution
+2                                                       successful execution
+3                                                       successful execution
+4 secondary sensitivity; official raw-count URL and download script provided
+5                                                       successful execution
+6                                                       successful execution
+7                                                       successful execution
+8                                                       code and schema only
+  match
+1  TRUE
+2  TRUE
+3  TRUE
+4  TRUE
+5  TRUE
+6  TRUE
+7  TRUE
+8  TRUE
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+R library initialized from the configured local environment
+                                          test PASS_FAIL
+1                      test_GSE18965_exact32.R      PASS
+2                         test_no_hardcoding.R      PASS
+3               test_config_code_consistency.R      PASS
+4  test_external_ECM_not_used_for_derivation.R      PASS
+5                    test_T2_high_definition.R      PASS
+6                         test_module_scores.R      PASS
+7                  test_public_input_rebuild.R      PASS
+8                test_key_manuscript_results.R      PASS
+9                  test_repository_structure.R      PASS
+10                 test_GSE118761_projection.R      PASS
+11              test_GSE118761_sample_counts.R      PASS
+12                 test_archive_independence.R      PASS
+13                        test_security_scan.R      PASS
+                                                                                                                                                                                                                                                   details
+1                                                                                                  2: Setting LC_CTYPE=C.UTF-8 failed  | 3: Setting LC_MONETARY=C.UTF-8 failed  | 4: Setting LC_TIME=C.UTF-8 failed  | PASS: GSE18965 exact32 verification
+2                                                                                                                           REFERENCE_FILE_USED_IN_DERIVATION = FALSE | TOP32_TRUNCATION = FALSE | MANUAL_OVERRIDE = FALSE | MATCHED_REFERENCE_SYMBOLS =  
+3                                                                                                    2: Setting LC_CTYPE=C.UTF-8 failed  | 3: Setting LC_MONETARY=C.UTF-8 failed  | 4: Setting LC_TIME=C.UTF-8 failed  | PASS: config and code consistency
+4                                                                              2: Setting LC_CTYPE=C.UTF-8 failed  | 3: Setting LC_MONETARY=C.UTF-8 failed  | 4: Setting LC_TIME=C.UTF-8 failed  | PASS: external ECM definitions excluded from derivation
+5                                                                     2: Setting LC_CTYPE=C.UTF-8 failed  | 3: Setting LC_MONETARY=C.UTF-8 failed  | 4: Setting LC_TIME=C.UTF-8 failed  | PASS: primary T2-high definition is >= median with 348/347 split
+6                                                                                          2: Setting LC_CTYPE=C.UTF-8 failed  | 3: Setting LC_MONETARY=C.UTF-8 failed  | 4: Setting LC_TIME=C.UTF-8 failed  | PASS: mean gene-wise z score implementation
+7                                                                                    2: Setting LC_CTYPE=C.UTF-8 failed  | 3: Setting LC_MONETARY=C.UTF-8 failed  | 4: Setting LC_TIME=C.UTF-8 failed  | PASS: official GEO public-input rebuild interface
+8                              2: Setting LC_CTYPE=C.UTF-8 failed  | 3: Setting LC_MONETARY=C.UTF-8 failed  | 4: Setting LC_TIME=C.UTF-8 failed  | PASS: reproducible key manuscript values; projection is verified separately from sample-level distances
+9                                                                                                           2: Setting LC_CTYPE=C.UTF-8 failed  | 3: Setting LC_MONETARY=C.UTF-8 failed  | 4: Setting LC_TIME=C.UTF-8 failed  | PASS: repository structure
+10 3: Setting LC_MONETARY=C.UTF-8 failed  | 4: Setting LC_TIME=C.UTF-8 failed  | R library initialized from the configured local environment | PASS: GSE118761 projection is sample-level, executable, and matches the locked final config
+11                                                                                 2: Setting LC_CTYPE=C.UTF-8 failed  | 3: Setting LC_MONETARY=C.UTF-8 failed  | 4: Setting LC_TIME=C.UTF-8 failed  | PASS: GSE118761 sample counts and projection counts
+12                                                                          2: Setting LC_CTYPE=C.UTF-8 failed  | 3: Setting LC_MONETARY=C.UTF-8 failed  | 4: Setting LC_TIME=C.UTF-8 failed  | PASS: formal analysis code has no archive input dependency
+13                                                                                                    2: Setting LC_CTYPE=C.UTF-8 failed  | 3: Setting LC_MONETARY=C.UTF-8 failed  | 4: Setting LC_TIME=C.UTF-8 failed  | PASS: final security scan status
+END=2026-09-19T00:52:05
+FULL_CLEAN_RERUN_PASS=TRUE

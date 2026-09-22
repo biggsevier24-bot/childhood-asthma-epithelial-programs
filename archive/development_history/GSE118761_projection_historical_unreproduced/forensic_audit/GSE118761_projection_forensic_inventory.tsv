@@ -1,0 +1,7 @@
+evidence_type	location	finding
+retained_script	archive/development_history/final_locked_analysis_20260714.R or originating project archive	Tissue-specific z scaling plus locked GSE152004 centroids did not reproduce manuscript counts
+retained_assignments	archive/development_history/GSE118761_projection_conflict	Archived because regenerated/retained counts conflict with manuscript values
+finite_method_grid	audit/GSE118761_projection_method_grid.tsv	No exact joint match among allowed score, scaling, distance, and retained-centroid configurations
+sample_assignments	audit/GSE118761_projection_method_grid_assignments.tsv	Full sample-level output for every tested finite-grid configuration
+workbook_inventory	audit/GSE118761_projection_workbook_inventory.tsv	No sample-level source reproducing both manuscript count vectors was located
+session_history	local Codex session 019efe71-ac54-7520-98c6-b34da8af8c4d	Manuscript counts were retained despite an explicitly documented executable-rerun discrepancy

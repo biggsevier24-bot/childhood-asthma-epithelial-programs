@@ -1,0 +1,26 @@
+attempt_id	attempt_type	feature	old_threshold	proposed_threshold	accepted	final_n	overlap_n	missing_n	extra_n	missing	extra	exact_match
+SIMPLIFY001	threshold_rounding	aa_root	0.125155238	0.125	TRUE	32	32	0	0			TRUE
+SIMPLIFY002	threshold_rounding	aa_root	0.125	0.13	FALSE	31	31	1	0	THBS2		FALSE
+SIMPLIFY003	threshold_rounding	aa_root	0.125	0.12	FALSE	33	32	0	1		COL4A4	FALSE
+SIMPLIFY004	threshold_rounding	cluster_signed_low	-0.508291745	-0.5	TRUE	32	32	0	0			TRUE
+SIMPLIFY005	threshold_rounding	cluster_signed_low	-0.5	-0.51	FALSE	32	32	0	0			TRUE
+SIMPLIFY006	threshold_rounding	integrin_abs_median	0.249903536	0.25	TRUE	32	32	0	0			TRUE
+SIMPLIFY007	threshold_rounding	signed_degree_040_zero_split	0.005154639	0.005	TRUE	32	32	0	0			TRUE
+SIMPLIFY008	threshold_rounding	signed_degree_040_zero_split	0.005	0.01	FALSE	32	32	0	0			TRUE
+SIMPLIFY009	threshold_rounding	collagen_seed_degree	0.766194332	0.77	FALSE	26	25	7	1	COL4A3;COL8A1;ITGA1;ITGA6;MMP16;MMP20;POSTN	MMP28	FALSE
+SIMPLIFY010	threshold_rounding	collagen_seed_degree	0.766194332	0.75	FALSE	35	32	0	3		DDR2;LUM;TLL1	FALSE
+SIMPLIFY011	threshold_rounding	family_collagen	0.5	0.5	TRUE	32	32	0	0			TRUE
+SIMPLIFY012	threshold_rounding	matricellular_signed_mean	0.691823415	0.69	TRUE	32	32	0	0			TRUE
+SIMPLIFY013	threshold_rounding	matricellular_signed_mean	0.69	0.7	FALSE	30	30	2	0	ITGBL1;MMP13		FALSE
+SIMPLIFY014	threshold_rounding	aa_narrow	0.136921505	0.14	TRUE	32	32	0	0			TRUE
+SIMPLIFY015	threshold_rounding	aa_narrow	0.14	0.137	FALSE	32	32	0	0			TRUE
+SIMPLIFY016	threshold_rounding	aa_high	0.192824972	0.19	TRUE	32	32	0	0			TRUE
+SIMPLIFY017	threshold_rounding	aa_high	0.19	0.2	FALSE	31	31	1	0	MMP13		FALSE
+SIMPLIFY018	threshold_rounding	aa_high	0.19	0.193	FALSE	32	32	0	0			TRUE
+SIMPLIFY019	threshold_rounding	signed_degree_060	0.765625	0.77	TRUE	32	32	0	0			TRUE
+SIMPLIFY020	threshold_rounding	signed_degree_060	0.77	0.75	FALSE	29	29	3	0	COL11A1;COL5A1;COL5A2		FALSE
+SIMPLIFY021	threshold_rounding	mmp_signed_max	0.939526755	0.94	FALSE	33	32	0	1		COL4A6	FALSE
+SIMPLIFY022	threshold_rounding	all_signed_median	0.838103855	0.84	FALSE	33	32	0	1		MMP28	FALSE
+SIMPLIFY023	threshold_rounding	cluster_signed_high	0.685877666	0.69	FALSE	30	30	2	0	COL8A1;LAMA2		FALSE
+SIMPLIFY024	threshold_rounding	cluster_signed_high	0.685877666	0.686	TRUE	32	32	0	0			TRUE
+SIMPLIFY025	threshold_rounding	signed_degree_030	0.901041667	0.9	TRUE	32	32	0	0			TRUE

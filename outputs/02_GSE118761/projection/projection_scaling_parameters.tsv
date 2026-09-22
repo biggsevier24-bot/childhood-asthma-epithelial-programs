@@ -1,0 +1,7 @@
+feature	reference_population	mean	sd	transformation
+T2	GSE118761_nasal_samples	0.136105749607601	0.792176253303515	(raw_score - tissue_mean) / tissue_sample_sd
+IFN	GSE118761_nasal_samples	0.0663414196076033	0.901836295797875	(raw_score - tissue_mean) / tissue_sample_sd
+repair	GSE118761_nasal_samples	-0.0895780922033764	0.231758795028715	(raw_score - tissue_mean) / tissue_sample_sd
+T2	GSE118761_tracheal_samples	-0.152771759763634	0.917335440149394	(raw_score - tissue_mean) / tissue_sample_sd
+IFN	GSE118761_tracheal_samples	-0.0744648587432282	0.944819735338388	(raw_score - tissue_mean) / tissue_sample_sd
+repair	GSE118761_tracheal_samples	0.100546838187463	0.182560124898159	(raw_score - tissue_mean) / tissue_sample_sd

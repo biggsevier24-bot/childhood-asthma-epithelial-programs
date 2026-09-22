@@ -1,0 +1,7 @@
+2026-09-18 09:05:44 | Reading deposited GSE18965 Series Matrix 
+2026-09-18 09:05:45 | Parsing GPL96 and retaining highest-mean probe per gene 
+2026-09-18 09:05:46 | Constructing 140-gene biologically annotated candidate pool 
+2026-09-18 09:05:46 | Generating expression and Pearson features 
+2026-09-18 09:05:46 | Applying frozen network prefilter and generating rule features 
+2026-09-18 09:05:46 | Applying frozen explicit if/else selection rule 
+2026-09-18 09:05:47 | Derivation complete: FINAL_N=32 

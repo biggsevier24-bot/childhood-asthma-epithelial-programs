@@ -1,0 +1,25 @@
+HGNC ID	Approved symbol	Approved name	Status	Locus type	Previous symbols	Alias symbols	Chromosome	NCBI Gene ID	Ensembl gene ID	Vega gene ID	Group ID	Group name
+HGNC:7155	MMP1	matrix metallopeptidase 1	Approved	gene with protein product	CLG		11q22.2	4312	ENSG00000196611	OTTHUMG00000048192	891	M10 matrix metallopeptidases
+HGNC:7156	MMP10	matrix metallopeptidase 10	Approved	gene with protein product	STMY2		11q22.2	4319	ENSG00000166670	OTTHUMG00000168083	891	M10 matrix metallopeptidases
+HGNC:7157	MMP11	matrix metallopeptidase 11	Approved	gene with protein product	STMY3		22q11.23	4320	ENSG00000099953	OTTHUMG00000150742	891	M10 matrix metallopeptidases
+HGNC:7158	MMP12	matrix metallopeptidase 12	Approved	gene with protein product		HME	11q22.2	4321	ENSG00000262406	OTTHUMG00000165848	891	M10 matrix metallopeptidases
+HGNC:7159	MMP13	matrix metallopeptidase 13	Approved	gene with protein product		CLG3	11q22.2	4322	ENSG00000137745	OTTHUMG00000165850	891	M10 matrix metallopeptidases
+HGNC:7160	MMP14	matrix metallopeptidase 14	Approved	gene with protein product		MT1-MMP	14q11.2	4323	ENSG00000157227	OTTHUMG00000028704	891	M10 matrix metallopeptidases
+HGNC:7161	MMP15	matrix metallopeptidase 15	Approved	gene with protein product		MT2-MMP, MTMMP2, SMCP-2	16q21	4324	ENSG00000102996	OTTHUMG00000133466	891	M10 matrix metallopeptidases
+HGNC:7162	MMP16	matrix metallopeptidase 16	Approved	gene with protein product	C8orf57	MT3-MMP, DKFZp761D112	8q21.3	4325	ENSG00000156103	OTTHUMG00000163769	891	M10 matrix metallopeptidases
+HGNC:7163	MMP17	matrix metallopeptidase 17	Approved	gene with protein product		MT4-MMP	12q24.33	4326	ENSG00000198598	OTTHUMG00000168050	891	M10 matrix metallopeptidases
+HGNC:7165	MMP19	matrix metallopeptidase 19	Approved	gene with protein product	MMP18	RASI-1	12q13.2	4327	ENSG00000123342	OTTHUMG00000170216	891	M10 matrix metallopeptidases
+HGNC:7166	MMP2	matrix metallopeptidase 2	Approved	gene with protein product	CLG4, CLG4A	MMP-2, TBE-1	16q12.2	4313	ENSG00000087245	OTTHUMG00000133202	891	M10 matrix metallopeptidases
+HGNC:7167	MMP20	matrix metallopeptidase 20	Approved	gene with protein product			11q22.2	9313	ENSG00000137674	OTTHUMG00000168081	891	M10 matrix metallopeptidases
+HGNC:14357	MMP21	matrix metallopeptidase 21	Approved	gene with protein product			10q26.2	118856	ENSG00000154485	OTTHUMG00000019235	891	M10 matrix metallopeptidases
+HGNC:7170	MMP23A	matrix metallopeptidase 23A (pseudogene)	Approved	pseudogene	MMP21	MIFR	1p36.33	8511	ENSG00000215914	OTTHUMG00000000585	891	M10 matrix metallopeptidases
+HGNC:7171	MMP23B	matrix metallopeptidase 23B	Approved	gene with protein product	MMP22	MIFR, MIFR-1	1p36.33	8510	ENSG00000189409	OTTHUMG00000074713	891	M10 matrix metallopeptidases
+HGNC:7172	MMP24	matrix metallopeptidase 24	Approved	gene with protein product		MT5-MMP	20q11.22	10893	ENSG00000125966	OTTHUMG00000032330	891	M10 matrix metallopeptidases
+HGNC:14246	MMP25	matrix metallopeptidase 25	Approved	gene with protein product	MMPL1, MMP20	MT6-MMP	16p13.3	64386	ENSG00000008516	OTTHUMG00000177475	891	M10 matrix metallopeptidases
+HGNC:14249	MMP26	matrix metallopeptidase 26	Approved	gene with protein product		endometase, MGC126590, MGC126592	11p15.4	56547	ENSG00000167346	OTTHUMG00000066442	891	M10 matrix metallopeptidases
+HGNC:14250	MMP27	matrix metallopeptidase 27	Approved	gene with protein product			11q22.2	64066	ENSG00000137675	OTTHUMG00000168099	891	M10 matrix metallopeptidases
+HGNC:14366	MMP28	matrix metallopeptidase 28	Approved	gene with protein product		MMP-25, MM28, EPILYSIN, MMP-28	17q12	79148	ENSG00000271447	OTTHUMG00000188387	891	M10 matrix metallopeptidases
+HGNC:7173	MMP3	matrix metallopeptidase 3	Approved	gene with protein product	STMY1, STMY		11q22.2	4314	ENSG00000149968	OTTHUMG00000048254	891	M10 matrix metallopeptidases
+HGNC:7174	MMP7	matrix metallopeptidase 7	Approved	gene with protein product	MPSL1	PUMP-1	11q22.2	4316	ENSG00000137673	OTTHUMG00000048193	891	M10 matrix metallopeptidases
+HGNC:7175	MMP8	matrix metallopeptidase 8	Approved	gene with protein product	CLG1		11q22.2	4317	ENSG00000118113	OTTHUMG00000167587	891	M10 matrix metallopeptidases
+HGNC:7176	MMP9	matrix metallopeptidase 9	Approved	gene with protein product	CLG4B		20q13.12	4318	ENSG00000100985	OTTHUMG00000033044	891	M10 matrix metallopeptidases

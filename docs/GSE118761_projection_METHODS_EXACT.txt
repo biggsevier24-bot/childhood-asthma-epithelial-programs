@@ -1,0 +1,7 @@
+GSE118761 projection used the GSE152004 three-state solution as the reference.
+For GSE118761, T2, IFN, and fixed 32-gene repair-ECM raw scores were calculated as the mean of gene-wise z-standardized VST expression among available genes, with gene-wise standardization performed across all 104 GSE118761 samples.
+Each raw program score was then z-standardized separately within the 55 nasal and 49 tracheal samples.
+Reference coordinates were the standardized T2, IFN, and repair-ECM scores of the 695 GSE152004 samples assigned by the locked k=3 solution; each E1, E2, and E3 centroid was the arithmetic mean of these three coordinates within that state.
+Nasal and tracheal samples were projected separately by Euclidean distance in the ordered T2/IFN/repair-ECM feature space and assigned to the nearest centroid; exact ties, if any, were resolved in E1, E2, E3 order.
+Assignment margin was defined as the second-nearest minus nearest centroid distance, and margins less than or equal to 0.10 were classified as low confidence.
+Atopy, asthma, and wheeze summaries were calculated directly from the final sample-level assignments.

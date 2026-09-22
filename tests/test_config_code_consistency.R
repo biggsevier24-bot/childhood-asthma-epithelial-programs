@@ -1,0 +1,7 @@
+options(stringsAsFactors=FALSE)
+repo <- normalizePath(file.path(dirname(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value=TRUE)[1])),".."),winslash="/",mustWork=TRUE)
+cfg <- readLines(file.path(repo,"config/global_config.yaml"),warn=FALSE)
+t2 <- readLines(file.path(repo,"analysis/03_GSE152004_primary_validation/02_define_T2_high.R"),warn=FALSE)
+cl <- readLines(file.path(repo,"analysis/03_GSE152004_primary_validation/05_E1_E2_E3_clustering.R"),warn=FALSE)
+stopifnot(any(grepl("random_seed: 20260626",cfg,fixed=TRUE)),any(grepl("score_greater_than_or_equal",cfg,fixed=TRUE)),any(grepl("t2>=cut",t2,fixed=TRUE)),any(grepl("nstart=500",cl,fixed=TRUE)))
+cat("PASS: config and code consistency\n")

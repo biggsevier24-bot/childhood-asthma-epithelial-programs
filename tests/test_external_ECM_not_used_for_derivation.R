@@ -1,0 +1,6 @@
+options(stringsAsFactors=FALSE)
+repo <- normalizePath(file.path(dirname(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value=TRUE)[1])),".."),winslash="/",mustWork=TRUE)
+files <- list.files(file.path(repo,"analysis/01_GSE18965_repair_ECM"),pattern="\\.R$",full.names=TRUE)
+txt <- paste(unlist(lapply(files,readLines,warn=FALSE)),collapse="\n")
+stopifnot(!grepl("Reactome_ECM_manifest|NABA_core_matrisome_manifest",txt,ignore.case=TRUE))
+cat("PASS: external ECM definitions excluded from derivation\n")

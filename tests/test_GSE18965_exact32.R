@@ -1,0 +1,5 @@
+options(stringsAsFactors=FALSE)
+repo <- normalizePath(file.path(dirname(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value=TRUE)[1])),".."),winslash="/",mustWork=TRUE)
+x <- read.delim(file.path(repo,"outputs/verification.tsv"),check.names=FALSE)
+stopifnot(x$REFERENCE_N==32L,x$DERIVED_N==32L,x$OVERLAP_N==32L,x$MISSING_N==0L,x$EXTRA_N==0L,x$EXACT_MATCH_32)
+cat("PASS: GSE18965 exact32 verification\n")

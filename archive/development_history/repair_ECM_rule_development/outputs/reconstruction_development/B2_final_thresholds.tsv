@@ -1,0 +1,15 @@
+feature	threshold
+aa_root	0.125
+cluster_signed_low	-0.5
+integrin_abs_median	0.25
+signed_degree_040_zero_split	0.005
+collagen_seed_degree	0.766194332
+family_collagen	0.5
+matricellular_signed_mean	0.69
+aa_narrow	0.14
+aa_high	0.19
+signed_degree_060	0.77
+mmp_signed_max	0.939526755
+all_signed_median	0.838103855
+cluster_signed_high	0.686
+signed_degree_030	0.9

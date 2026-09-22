@@ -1,0 +1,2 @@
+row	depends_on_projection	old_value	new_value	changed_YN	source_file
+Supplementary Table S8 external-ECM random-set projection assignment margins	No - uses Reactome/NABA external-definition specificity pipeline, not final fixed32 assignments	Retained external-specificity values	Unchanged	N	outputs/05_external_ECM/corrected_projection_specificity.xlsx

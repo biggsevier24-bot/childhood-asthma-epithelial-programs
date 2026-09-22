@@ -1,0 +1,7 @@
+location	current_text	current_value	new_value	needs_change	reason	source_output
+Abstract Results	T2-high/IFN-low state showed higher atopy frequency after projection into GSE118761.	higher atopy frequency	SUPPORTED	wording review	Reassess from reproducible sample assignments	audit/projection_conclusion_check.tsv
+Results cross-cohort projection	Superseded aggregate projection summary.	superseded aggregate projection summary	See GSE118761_projection_RESULTS_FINAL.txt	YES	Superseded aggregate replaced by executable workflow	docs/GSE118761_projection_RESULTS_FINAL.txt
+Discussion	Projection interpreted as partial cross-cohort recapitulation.	partial recapitulation	SUPPORTED	wording review	Align interpretation with reproducible result	audit/projection_conclusion_check.tsv
+Figure 5 legend	Superseded aggregate projection summary.	superseded aggregate projection summary	See Figure5f_source_data.tsv	YES	Panel source rebuilt	figures/Figure5/Figure5f_source_data.tsv
+Supplementary Table S8	External Reactome/NABA projection-margin specificity results.	external ECM values	unchanged	NO	S8 is not derived from fixed32 final assignments	audit/S8_projection_dependency_audit.tsv
+Supplementary Table S9	Historical aggregate fixed32 projection profiles.	historical nasal and tracheal profiles	See Supplementary_Table_S9_source.tsv	YES	S9 rebuilt from final sample assignments	tables/Supplementary_Table_S9_source.tsv

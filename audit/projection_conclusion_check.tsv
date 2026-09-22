@@ -1,0 +1,4 @@
+claim	old_support	new_support	status
+E1 showed higher atopy frequency after nasal projection	Locked aggregate: E1/E2/E3 76.7/16.7/28.6%	E1/E2/E3 85.7%/29.6%/28.6%; Fisher P=0.00013966	SUPPORTED
+E1 showed higher asthma frequency after nasal projection	Locked aggregate: E1/E2/E3 53.3/33.3/71.4%	E1/E2/E3 57.1%/37.0%/71.4%; Fisher P=0.19749	NOT_SUPPORTED
+E1 showed higher wheeze frequency after nasal projection	Locked aggregate: E1/E2/E3 53.3/33.3/71.4%	E1/E2/E3 57.1%/37.0%/71.4%; Fisher P=0.19749	NOT_SUPPORTED

@@ -1,0 +1,2 @@
+term,n,OR,CI_low,CI_high,p_value,score_definition,adjustment,provenance_status
+alternative_repair_per_SD,695,1.163873208,0.997316552,1.3582456258,0.0541170294,"mean log2(CPM+1) over fixed32, standardized per SD","standardized IFN score","VERIFIED_OUTPUT_INPUT_NOT_REDISTRIBUTED"

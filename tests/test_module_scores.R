@@ -1,0 +1,7 @@
+options(stringsAsFactors=FALSE)
+repo <- normalizePath(file.path(dirname(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value=TRUE)[1])),".."),winslash="/",mustWork=TRUE)
+source(file.path(repo,"R/common/module_scoring.R"))
+m <- matrix(c(1,2,3,4,2,4,6,8),nrow=2,byrow=TRUE,dimnames=list(c("A","B"),paste0("S",1:4)))
+s <- score_mean_gene_z(m,c("A","B"),2)
+stopifnot(length(s)==4L,abs(mean(s))<1e-12,abs(sd(s)-1)<1e-12)
+cat("PASS: mean gene-wise z score implementation\n")

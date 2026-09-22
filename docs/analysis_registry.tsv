@@ -1,0 +1,3 @@
+analysis_id	dataset	purpose	entry_script	config	primary_input	primary_output	manuscript_location	figure_table	status
+GSE118761_PROJECTION_FINAL	GSE118761; GSE152004	Nearest-centroid projection of locked GSE152004 states	analysis/02_GSE118761_airway_programs/projection/01_prepare_projection_inputs.R	config/GSE118761_projection_final.yaml	GSE118761 VST expression/metadata and formal GSE152004 scores/assignments	outputs/02_GSE118761/projection/GSE118761_projection_assignments_FINAL.tsv	Results and Methods cross-cohort projection	Figure 5f; Supplementary Table S9	FORMAL_LOCKED
+

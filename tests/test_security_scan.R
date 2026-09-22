@@ -1,0 +1,7 @@
+options(stringsAsFactors = FALSE)
+repo <- normalizePath(file.path(dirname(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value = TRUE)[1])), ".."), winslash = "/", mustWork = TRUE)
+report <- file.path(repo, "audit/security_scan_report.md")
+stopifnot(file.exists(report))
+text <- paste(readLines(report, warn = FALSE), collapse = "\n")
+stopifnot(grepl("SECURITY_SCAN_PASS = TRUE", text, fixed = TRUE))
+cat("PASS: final security scan status\n")

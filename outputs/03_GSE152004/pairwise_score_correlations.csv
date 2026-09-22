@@ -1,0 +1,10 @@
+"cohort","tissue","score_branch","score_1","score_2","pearson_r","spearman_rho"
+"GSE152004","nasal","primary VST branch; manuscript-locked T2_z/IFN_z/fixed 32-gene repair_ECM_z","T2","IFN",-0.166003679444601,-0.260072299906274
+"GSE152004","nasal","primary VST branch; manuscript-locked T2_z/IFN_z/fixed 32-gene repair_ECM_z","T2","repair_ECM",-0.291648827388578,-0.290374167921948
+"GSE152004","nasal","primary VST branch; manuscript-locked T2_z/IFN_z/fixed 32-gene repair_ECM_z","IFN","repair_ECM",0.205826063970834,0.11536535652726
+"GSE118761","nasal","manuscript-locked nasal module scores; fixed 32-gene repair-ECM","T2","IFN",-0.16995145429535,-0.141414141414141
+"GSE118761","nasal","manuscript-locked nasal module scores; fixed 32-gene repair-ECM","T2","repair_ECM",-0.109495230904686,-0.0467532467532467
+"GSE118761","nasal","manuscript-locked nasal module scores; fixed 32-gene repair-ECM","IFN","repair_ECM",0.196695169150186,0.144083694083694
+"GSE118761","tracheal","tissue-sensitivity tracheal module scores; fixed 32-gene repair-ECM","T2","IFN",-0.138381425133921,-0.0818367346938775
+"GSE118761","tracheal","tissue-sensitivity tracheal module scores; fixed 32-gene repair-ECM","T2","repair_ECM",0.064742596746713,-0.0618367346938775
+"GSE118761","tracheal","tissue-sensitivity tracheal module scores; fixed 32-gene repair-ECM","IFN","repair_ECM",0.0714781644916227,-0.00336734693877551

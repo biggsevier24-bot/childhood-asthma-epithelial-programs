@@ -1,0 +1,28 @@
+HGNC ID	Approved symbol	Approved name	Status	Locus type	Previous symbols	Alias symbols	Chromosome	NCBI Gene ID	Ensembl gene ID	Vega gene ID	Group ID	Group name
+HGNC:6134	ITGA1	integrin subunit alpha 1	Approved	gene with protein product		VLA1, CD49a	5q11.2	3672	ENSG00000213949	OTTHUMG00000131163	1160	Integrin alpha subunits
+HGNC:6135	ITGA10	integrin subunit alpha 10	Approved	gene with protein product			1q21.1	8515	ENSG00000143127	OTTHUMG00000013751	1160	Integrin alpha subunits
+HGNC:6136	ITGA11	integrin subunit alpha 11	Approved	gene with protein product		HsT18964	15q23	22801	ENSG00000137809	OTTHUMG00000172657	1160	Integrin alpha subunits
+HGNC:6137	ITGA2	integrin subunit alpha 2	Approved	gene with protein product	CD49B	GPIa, VLAA2, HPA-5	5q11.2	3673	ENSG00000164171	OTTHUMG00000131165	1160	Integrin alpha subunits
+HGNC:6138	ITGA2B	integrin subunit alpha 2b	Approved	gene with protein product	GP2B	CD41B, CD41, PPP1R93, GPIIb	17q21.31	3674	ENSG00000005961	OTTHUMG00000177935	1160	Integrin alpha subunits
+HGNC:6139	ITGA3	integrin subunit alpha 3	Approved	gene with protein product	MSK18	CD49c, VLA3a, VCA-2, GAP-B3	17q21.33	3675	ENSG00000005884	OTTHUMG00000161890	1160	Integrin alpha subunits
+HGNC:6140	ITGA4	integrin subunit alpha 4	Approved	gene with protein product	CD49D	CD49d	2q31.3	3676	ENSG00000115232	OTTHUMG00000154212	1160	Integrin alpha subunits
+HGNC:6141	ITGA5	integrin subunit alpha 5	Approved	gene with protein product	FNRA	CD49e	12q13.13	3678	ENSG00000161638	OTTHUMG00000169841	1160	Integrin alpha subunits
+HGNC:6142	ITGA6	integrin subunit alpha 6	Approved	gene with protein product		CD49f, VLA-6, ITGA6A, ITGA6B	2q31.1	3655	ENSG00000091409	OTTHUMG00000132277	1160	Integrin alpha subunits
+HGNC:6143	ITGA7	integrin subunit alpha 7	Approved	gene with protein product			12q13.2	3679	ENSG00000135424	OTTHUMG00000170699	1160	Integrin alpha subunits
+HGNC:6144	ITGA8	integrin subunit alpha 8	Approved	gene with protein product			10p13	8516	ENSG00000077943	OTTHUMG00000017733	1160	Integrin alpha subunits
+HGNC:6145	ITGA9	integrin subunit alpha 9	Approved	gene with protein product		RLC, ITGA4L, ALPHA-RLC	3p22.2	3680	ENSG00000144668	OTTHUMG00000130815	1160	Integrin alpha subunits
+HGNC:6146	ITGAD	integrin subunit alpha D	Approved	gene with protein product		CD11d, ADB2	16p11.2	3681	ENSG00000156886	OTTHUMG00000176614	1160	Integrin alpha subunits
+HGNC:6147	ITGAE	integrin subunit alpha E	Approved	gene with protein product		CD103, HUMINAE	17p13.2	3682	ENSG00000083457	OTTHUMG00000177634	1160	Integrin alpha subunits
+HGNC:6148	ITGAL	integrin subunit alpha L	Approved	gene with protein product	CD11A	HNA-5, LFA-1, LFA1A	16p11.2	3683	ENSG00000005844	OTTHUMG00000176964	1160	Integrin alpha subunits
+HGNC:6149	ITGAM	integrin subunit alpha M	Approved	gene with protein product	CR3A, CD11B	HNA-4, MAC-1, CD11b	16p11.2	3684	ENSG00000169896	OTTHUMG00000176612	1160	Integrin alpha subunits
+HGNC:6150	ITGAV	integrin subunit alpha V	Approved	gene with protein product	VNRA, MSK8, VTNR	CD51	2q32.1	3685	ENSG00000138448	OTTHUMG00000132635	1160	Integrin alpha subunits
+HGNC:6152	ITGAX	integrin subunit alpha X	Approved	gene with protein product	CD11C	CD11c	16p11.2	3687	ENSG00000140678	OTTHUMG00000132465	1160	Integrin alpha subunits
+HGNC:6153	ITGB1	integrin subunit beta 1	Approved	gene with protein product	FNRB, MSK12, MDF2	CD29, GPIIA	10p11.22	3688	ENSG00000150093	OTTHUMG00000017928	1159	Integrin beta subunits
+HGNC:6155	ITGB2	integrin subunit beta 2	Approved	gene with protein product	CD18, MFI7	LFA-1, MAC-1	21q22.3	3689	ENSG00000160255	OTTHUMG00000090257	1159	Integrin beta subunits
+HGNC:6156	ITGB3	integrin subunit beta 3	Approved	gene with protein product	GP3A	CD61, GPIIIa	17q21.32	3690	ENSG00000259207	OTTHUMG00000171956	1159	Integrin beta subunits
+HGNC:6158	ITGB4	integrin subunit beta 4	Approved	gene with protein product		CD104	17q25.1	3691	ENSG00000132470	OTTHUMG00000179814	1159	Integrin beta subunits
+HGNC:6160	ITGB5	integrin subunit beta 5	Approved	gene with protein product			3q21.2	3693	ENSG00000082781	OTTHUMG00000159432	1159	Integrin beta subunits
+HGNC:6161	ITGB6	integrin subunit beta 6	Approved	gene with protein product			2q24.2	3694	ENSG00000115221	OTTHUMG00000132026	1159	Integrin beta subunits
+HGNC:6162	ITGB7	integrin subunit beta 7	Approved	gene with protein product			12q13.13	3695	ENSG00000139626	OTTHUMG00000169775	1159	Integrin beta subunits
+HGNC:6163	ITGB8	integrin subunit beta 8	Approved	gene with protein product			7p21.1	3696	ENSG00000105855	OTTHUMG00000023594	1159	Integrin beta subunits
+HGNC:6164	ITGBL1	integrin subunit beta like 1	Approved	gene with protein product		TIED, OSCP	13q33.1	9358	ENSG00000198542	OTTHUMG00000017296	1159	Integrin beta subunits

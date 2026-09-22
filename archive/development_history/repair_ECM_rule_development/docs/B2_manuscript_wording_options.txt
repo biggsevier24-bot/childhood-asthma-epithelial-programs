@@ -1,0 +1,7 @@
+A. Most conservative version
+
+During revision, we implemented a deterministic reconstruction calibrated against the fixed 32-gene repair-ECM membership used in the manuscript. The frozen rule operates on GSE18965-derived biological annotation, AA-HN expression, and Pearson co-expression/network features and reproduces the same membership without gene-name-specific inclusion or exclusion, manual gene addition or removal, or top-N truncation. This reconstruction is distinct from the independent strict limma/GO audit and is not presented as recovery of the original historical selection algorithm.
+
+B. Reviewer-facing version
+
+To make the fixed repair-ECM membership computationally reproducible, we developed a revision-era deterministic reconstruction using GSE18965 biological annotation, expression, and co-expression/network features. Development used the fixed manuscript membership as calibration labels; reference-derived frequency features and gene symbols were excluded. After freezing the explicit rule, we reran the complete workflow in a reference-free environment and recovered all 32 genes with no additional genes. Strict limma DEG/GO results remained an independent audit, and Reactome/NABA definitions remained external sensitivity analyses.

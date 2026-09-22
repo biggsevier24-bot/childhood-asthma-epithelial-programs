@@ -1,0 +1,47 @@
+HGNC ID	Approved symbol	Approved name	Status	Locus type	Previous symbols	Alias symbols	Chromosome	NCBI Gene ID	Ensembl gene ID	Vega gene ID	Group ID	Group name
+HGNC:18038	COL26A1	collagen type XXVI alpha 1 chain	Approved	gene with protein product	EMID2	Emu2, EMI6	7q22.1	136227	ENSG00000160963	OTTHUMG00000150033	490	Collagens
+HGNC:22442	COL28A1	collagen type XXVIII alpha 1 chain	Approved	gene with protein product			7p21.3	340267	ENSG00000215018	OTTHUMG00000150034	490	Collagens
+HGNC:2211	COL6A1	collagen type VI alpha 1 chain	Approved	gene with protein product			21q22.3	1291	ENSG00000142156	OTTHUMG00000090440	490	Collagens
+HGNC:2212	COL6A2	collagen type VI alpha 2 chain	Approved	gene with protein product			21q22.3	1292	ENSG00000142173	OTTHUMG00000090489	490	Collagens
+HGNC:2213	COL6A3	collagen type VI alpha 3 chain	Approved	gene with protein product			2q37.3	1293	ENSG00000163359	OTTHUMG00000150020	490	Collagens
+HGNC:33484	COL6A4P1	collagen type VI alpha 4 pseudogene 1	Approved	pseudogene	DVWA	VWA6, DIVA, COL6A4, COL6A4P	3p25.1	344875	ENSG00000230524	OTTHUMG00000154983	490	Collagens
+HGNC:38501	COL6A4P2	collagen type VI alpha 4 pseudogene 2	Approved	pseudogene		COL6A4	3q22.1	646300	ENSG00000228252	OTTHUMG00000154984	490	Collagens
+HGNC:26674	COL6A5	collagen type VI alpha 5 chain	Approved	gene with protein product	COL29A1	FLJ35880, VWA4	3q22.1	256076	ENSG00000172752	OTTHUMG00000159712	490	Collagens
+HGNC:27023	COL6A6	collagen type VI alpha 6 chain	Approved	gene with protein product			3q22.1	131873	ENSG00000206384	OTTHUMG00000159653	490	Collagens
+HGNC:2214	COL7A1	collagen type VII alpha 1 chain	Approved	gene with protein product	EBDCT, EBD1, EBR1		3p21.31	1294	ENSG00000114270	OTTHUMG00000133541	490	Collagens
+HGNC:2188	COL12A1	collagen type XII alpha 1 chain	Approved	gene with protein product	COL12A1L		6q13-q14.1	1303	ENSG00000111799	OTTHUMG00000015051	2248	Fibril associated collagens with interrupted triple helices
+HGNC:2191	COL14A1	collagen type XIV alpha 1 chain	Approved	gene with protein product	UND		8q24.12	7373	ENSG00000187955	OTTHUMG00000149877	2248	Fibril associated collagens with interrupted triple helices
+HGNC:2193	COL16A1	collagen type XVI alpha 1 chain	Approved	gene with protein product			1p35.2	1307	ENSG00000084636	OTTHUMG00000003883	2248	Fibril associated collagens with interrupted triple helices
+HGNC:2196	COL19A1	collagen type XIX alpha 1 chain	Approved	gene with protein product			6q13	1310	ENSG00000082293	OTTHUMG00000014987	2248	Fibril associated collagens with interrupted triple helices
+HGNC:14670	COL20A1	collagen type XX alpha 1 chain	Approved	gene with protein product		KIAA1510	20q13.33	57642	ENSG00000101203	OTTHUMG00000032964	2248	Fibril associated collagens with interrupted triple helices
+HGNC:17025	COL21A1	collagen type XXI alpha 1 chain	Approved	gene with protein product			6p12.1	81578	ENSG00000124749	OTTHUMG00000014907	2248	Fibril associated collagens with interrupted triple helices
+HGNC:22989	COL22A1	collagen type XXII alpha 1 chain	Approved	gene with protein product			8q24.23-q24.3	169044	ENSG00000169436	OTTHUMG00000150035	2248	Fibril associated collagens with interrupted triple helices
+HGNC:2217	COL9A1	collagen type IX alpha 1 chain	Approved	gene with protein product			6q13	1297	ENSG00000112280	OTTHUMG00000014988	2248	Fibril associated collagens with interrupted triple helices
+HGNC:2218	COL9A2	collagen type IX alpha 2 chain	Approved	gene with protein product	EDM2	MED	1p34.2	1298	ENSG00000049089	OTTHUMG00000005761	2248	Fibril associated collagens with interrupted triple helices
+HGNC:2219	COL9A3	collagen type IX alpha 3 chain	Approved	gene with protein product		IDD, MED, EDM3, FLJ90759, DJ885L7.4.1	20q13.33	1299	ENSG00000092758	OTTHUMG00000032938	2248	Fibril associated collagens with interrupted triple helices
+HGNC:2186	COL11A1	collagen type XI alpha 1 chain	Approved	gene with protein product	COLL6, DFNA37	STL2, CO11A1	1p21.1	1301	ENSG00000060718	OTTHUMG00000010872	2247	Fibrillar collagens
+HGNC:2187	COL11A2	collagen type XI alpha 2 chain	Approved	gene with protein product	DFNA13, DFNB53	HKE5	6p21.32	1302	ENSG00000204248	OTTHUMG00000031036	2247	Fibrillar collagens
+HGNC:2197	COL1A1	collagen type I alpha 1 chain	Approved	gene with protein product		OI4	17q21.33	1277	ENSG00000108821	OTTHUMG00000148674	2247	Fibrillar collagens
+HGNC:2198	COL1A2	collagen type I alpha 2 chain	Approved	gene with protein product	OI4		7q21.3	1278	ENSG00000164692	OTTHUMG00000148675	2247	Fibrillar collagens
+HGNC:20821	COL24A1	collagen type XXIV alpha 1 chain	Approved	gene with protein product			1p22.3	255631	ENSG00000171502	OTTHUMG00000010629	2247	Fibrillar collagens
+HGNC:22986	COL27A1	collagen type XXVII alpha 1 chain	Approved	gene with protein product		KIAA1870, MGC11337, FLJ11895	9q32	85301	ENSG00000196739	OTTHUMG00000020537	2247	Fibrillar collagens
+HGNC:2200	COL2A1	collagen type II alpha 1 chain	Approved	gene with protein product	SEDC, AOM	STL1	12q13.11	1280	ENSG00000139219	OTTHUMG00000149896	2247	Fibrillar collagens
+HGNC:2201	COL3A1	collagen type III alpha 1 chain	Approved	gene with protein product	EDS4A		2q32.2	1281	ENSG00000168542	OTTHUMG00000132648	2247	Fibrillar collagens
+HGNC:2209	COL5A1	collagen type V alpha 1 chain	Approved	gene with protein product			9q34.3	1289	ENSG00000130635	OTTHUMG00000020891	2247	Fibrillar collagens
+HGNC:2210	COL5A2	collagen type V alpha 2 chain	Approved	gene with protein product			2q32.2	1290	ENSG00000204262	OTTHUMG00000149842	2247	Fibrillar collagens
+HGNC:14864	COL5A3	collagen type V alpha 3 chain	Approved	gene with protein product			19p13.2	50509	ENSG00000080573	OTTHUMG00000150019	2247	Fibrillar collagens
+HGNC:2190	COL13A1	collagen type XIII alpha 1 chain	Approved	gene with protein product			10q22.1	1305	ENSG00000197467	OTTHUMG00000018394	2250	Membrane associated collagens with interrupted triple helices
+HGNC:22990	COL23A1	collagen type XXIII alpha 1 chain	Approved	gene with protein product		DKFZp434K0621	5q35.3	91522	ENSG00000050767	OTTHUMG00000130890	2250	Membrane associated collagens with interrupted triple helices
+HGNC:18603	COL25A1	collagen type XXV alpha 1 chain	Approved	gene with protein product			4q25	84570	ENSG00000188517	OTTHUMG00000150039	2250	Membrane associated collagens with interrupted triple helices
+HGNC:2192	COL15A1	collagen type XV alpha 1 chain	Approved	gene with protein product			9q22.33	1306	ENSG00000204291	OTTHUMG00000020351	2252	Multiplexin collagens
+HGNC:2195	COL18A1	collagen type XVIII alpha 1 chain	Approved	gene with protein product	KNO	KS, KNO1	21q22.3	80781	ENSG00000182871	OTTHUMG00000090407	2252	Multiplexin collagens
+HGNC:2185	COL10A1	collagen type X alpha 1 chain	Approved	gene with protein product			6q22.1	1300	ENSG00000123500	OTTHUMG00000015426	2249	Network forming collagens
+HGNC:2202	COL4A1	collagen type IV alpha 1 chain	Approved	gene with protein product			13q34	1282	ENSG00000187498	OTTHUMG00000017342	2249	Network forming collagens
+HGNC:2203	COL4A2	collagen type IV alpha 2 chain	Approved	gene with protein product		FLJ22259, DKFZp686I14213	13q34	1284	ENSG00000134871	OTTHUMG00000017344	2249	Network forming collagens
+HGNC:2204	COL4A3	collagen type IV alpha 3 chain	Approved	gene with protein product			2q36.3	1285	ENSG00000169031	OTTHUMG00000149891	2249	Network forming collagens
+HGNC:2206	COL4A4	collagen type IV alpha 4 chain	Approved	gene with protein product		CA44	2q36.3	1286	ENSG00000081052	OTTHUMG00000149892	2249	Network forming collagens
+HGNC:2207	COL4A5	collagen type IV alpha 5 chain	Approved	gene with protein product	ASLN, ATS		Xq22.3	1287	ENSG00000188153	OTTHUMG00000022182	2249	Network forming collagens
+HGNC:2208	COL4A6	collagen type IV alpha 6 chain	Approved	gene with protein product			Xq22.3	1288	ENSG00000197565	OTTHUMG00000022179	2249	Network forming collagens
+HGNC:2215	COL8A1	collagen type VIII alpha 1 chain	Approved	gene with protein product	C3orf7	MGC9568	3q12.1	1295	ENSG00000144810	OTTHUMG00000148669	2249	Network forming collagens
+HGNC:2216	COL8A2	collagen type VIII alpha 2 chain	Approved	gene with protein product	FECD	PPCD, FECD1, PPCD2	1p34.3	1296	ENSG00000171812	OTTHUMG00000007665	2249	Network forming collagens
+HGNC:2194	COL17A1	collagen type XVII alpha 1 chain	Approved	gene with protein product	BPAG2	BP180	10q25.1	1308	ENSG00000065618	OTTHUMG00000018998	2251	Transmembrane collagens

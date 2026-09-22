@@ -1,0 +1,3 @@
+GSE211158_PRESENT = FALSE
+SEARCH_SCOPE = entire repository, with this required declaration excluded from the hit count
+ANALYSIS_CONTENT_HITS = 0

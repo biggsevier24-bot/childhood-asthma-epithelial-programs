@@ -1,0 +1,44 @@
+schema_version: 1
+analysis_id: GSE118761_PROJECTION_FINAL
+release_version: v1.0.0
+inputs:
+  gse118_expression: data/public/GSE118761/GSE118761_VST_gene_expression.csv
+  gse118_metadata: data/public/GSE118761/GSE118761_metadata.csv
+  gse152_scores: outputs/03_GSE152004/GSE152004_module_scores_recomputed.csv
+  gse152_assignments: outputs/03_GSE152004/GSE152004_k3_assignments_recomputed.csv
+  t2_gene_set: data/reference_gene_sets/T2_fixed3.txt
+  ifn_gene_set: data/reference_gene_sets/IFN_fixed50.txt
+  repair_gene_set: data/reference_gene_sets/repair_ECM_fixed32.txt
+score_definitions:
+  T2: mean of gene-wise z-standardized VST expression for CST1, CLCA1, and SERPINB2
+  IFN: mean of gene-wise z-standardized VST expression for IFN_fixed50 genes present in GSE118761
+  repair: mean of gene-wise z-standardized VST expression for fixed repair_ECM_fixed32 genes present in GSE118761
+  gene_wise_standardization_population: all 104 GSE118761 samples
+projection:
+  feature_order: [T2, IFN, repair]
+  target_standardization: z-standardize each raw program score separately within nasal and tracheal tissue
+  reference_coordinates: standardized GSE152004 T2_z, IFN_z, and repair_ECM_z scores
+  reference_states: [E1, E2, E3]
+  centroid_rule: arithmetic mean within each locked GSE152004 state
+  distance_metric: Euclidean
+  assignment_rule: nearest centroid; ties resolved by E1, E2, E3 order
+  margin_rule: second-nearest distance minus nearest distance
+  low_confidence_rule: margin less than or equal to 0.10
+  low_confidence_threshold: 0.10
+  tissue_handling: nasal and tracheal standardized and projected separately
+  random_seed: not_applicable
+expected_sample_counts:
+  total: 104
+  nasal: 55
+  tracheal: 49
+expected_projection_counts:
+  nasal: {E1: 21, E2: 27, E3: 7}
+  tracheal: {E1: 21, E2: 23, E3: 5}
+outputs:
+  projection_dir: outputs/02_GSE118761/projection
+  figure_dir: figures/Figure5
+  table_dir: tables
+  audit_dir: audit
+  docs_dir: docs
+  log_file: logs/GSE118761_projection_FINAL_run.log
+

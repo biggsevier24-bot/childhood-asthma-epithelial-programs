@@ -1,2 +1,0 @@
-model,outcome,term,beta,SE,OR,CI_low,CI_high,p_value,n,events,AIC
-molecular_T2_high ~ repair_ECM_z + IFN_z,molecular_T2_high,repair_ECM_z,-0.613758411976675,0.0915965291499352,0.541312565452371,0.452355180975087,0.647763761398735,2.07461479658743e-11,695,347,898.834179397331

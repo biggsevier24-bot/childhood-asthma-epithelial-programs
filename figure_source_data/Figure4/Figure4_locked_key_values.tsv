@@ -1,0 +1,6 @@
+cohort	tissue	PC	variable	locked_rho	machine_readable_rho	source_type	status	evidence
+GSE118761	nasal	PC1	IFN	0.715	0.715079365079365	canonical_recomputed_source	reproduced_from_preserved_input	GSE118761_nasal_PCA_correlations.csv
+GSE118761	nasal	PC3	T2	-0.609	-0.608585858585859	canonical_recomputed_source	reproduced_from_preserved_input	GSE118761_nasal_PCA_correlations.csv
+GSE118761	nasal	PC6	repair-ECM	0.299	0.299350649350649	canonical_recomputed_source	reproduced_from_preserved_input	GSE118761_nasal_PCA_correlations.csv
+GSE118761	nasal	PC7	atopy	0.451	0.451341281866493	canonical_recomputed_source	reproduced_from_preserved_input	GSE118761_nasal_PCA_correlations.csv
+GSE118761	nasal	PC9	wheeze/asthma	0.254	0.254309047143049	canonical_recomputed_source	reproduced_from_preserved_input	GSE118761_nasal_PCA_correlations.csv

@@ -1,0 +1,5 @@
+options(stringsAsFactors=FALSE)
+repo <- normalizePath(file.path(dirname(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value=TRUE)[1])), "../.."), winslash="/", mustWork=TRUE)
+source(file.path(repo,"R/common/module_scoring.R"))
+if(!requireNamespace("GSVA",quietly=TRUE)) stop("Official GSVA package is required; no fallback is permitted")
+cat("Official GSVA ssGSEA implementation available.\n")

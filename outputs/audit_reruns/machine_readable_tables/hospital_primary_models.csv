@@ -1,3 +1,0 @@
-model,outcome,term,beta,SE,OR,CI_low,CI_high,p_value,n,events,AIC
-asthma ~ clinical_T2_high + age + sex,asthma,clinical_T2_highTRUE,0.967669014771794,0.229853351554232,2.63180261084662,1.67725150661504,4.12960426933085,2.55437552184224e-05,325,158,439.69952501561
-frequent_exacerbation ~ clinical_T2_high + age + sex; asthma subgroup,frequent_exacerbation,clinical_T2_highTRUE,0.466501640970846,0.337298344007854,1.59440661845487,0.823161295015462,3.088255582917,0.166648475117782,158,79,224.961242108797

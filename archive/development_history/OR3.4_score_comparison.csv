@@ -1,0 +1,10 @@
+﻿metric,value
+Pearson correlation old versus current,0.8399961
+Spearman correlation old versus current,0.8056978
+Historical score SD,0.1248342
+Current score SD,0.2792506
+Historical T2-high minus T2-low mean,0.01273721
+Current T2-high minus T2-low mean,-0.1604569
+Reconstructed versus retained old score Pearson,1.0
+Reconstructed versus retained old score Spearman,1.0
+Reconstructed maximum absolute difference,4.440892e-16

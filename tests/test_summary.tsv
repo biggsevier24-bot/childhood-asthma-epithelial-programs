@@ -1,0 +1,15 @@
+test	PASS_FAIL	details
+test_GSE18965_exact32.R	PASS	PASS: GSE18965 exact32 verification
+test_no_hardcoding.R	PASS	REFERENCE_FILE_USED_IN_DERIVATION = FALSE | TOP32_TRUNCATION = FALSE | MANUAL_OVERRIDE = FALSE | MATCHED_REFERENCE_SYMBOLS =  
+test_config_code_consistency.R	PASS	PASS: config and code consistency
+test_external_ECM_not_used_for_derivation.R	PASS	PASS: external ECM definitions excluded from derivation
+test_T2_high_definition.R	PASS	PASS: primary T2-high definition is >= median with 348/347 split
+test_module_scores.R	PASS	PASS: mean gene-wise z score implementation
+test_public_input_rebuild.R	PASS	PASS: official GEO public-input rebuild interface
+test_key_manuscript_results.R	PASS	PASS: reproducible key manuscript values; projection is verified separately from sample-level distances
+test_repository_structure.R	PASS	PASS: repository structure
+test_GSE118761_projection.R	PASS	PASS: GSE118761 projection is sample-level, executable, and matches the locked final config
+test_GSE118761_sample_counts.R	PASS	PASS: GSE118761 sample counts and projection counts
+test_GSE118761_Figure4_PCA.R	PASS	PASS: GSE118761 historical Figure 4 PCA recipe reproduces all five locked correlations
+test_archive_independence.R	PASS	PASS: formal analysis code has no archive input dependency
+test_security_scan.R	PASS	PASS: final security scan status

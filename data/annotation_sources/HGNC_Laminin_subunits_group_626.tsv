@@ -1,0 +1,13 @@
+HGNC ID	Approved symbol	Approved name	Status	Locus type	Previous symbols	Alias symbols	Chromosome	NCBI Gene ID	Ensembl gene ID	Vega gene ID	Group ID	Group name
+HGNC:6481	LAMA1	laminin subunit alpha 1	Approved	gene with protein product	LAMA		18p11.31	284217	ENSG00000101680	OTTHUMG00000133478	626	Laminin subunits
+HGNC:6482	LAMA2	laminin subunit alpha 2	Approved	gene with protein product	LAMM		6q22.33	3908	ENSG00000196569	OTTHUMG00000015545	626	Laminin subunits
+HGNC:6483	LAMA3	laminin subunit alpha 3	Approved	gene with protein product	LAMNA	nicein-150kDa, kalinin-165kDa, BM600-150kDa, epiligrin	18q11.2	3909	ENSG00000053747	OTTHUMG00000131874	626	Laminin subunits
+HGNC:6484	LAMA4	laminin subunit alpha 4	Approved	gene with protein product		LAMA3	6q21	3910	ENSG00000112769	OTTHUMG00000015386	626	Laminin subunits
+HGNC:6485	LAMA5	laminin subunit alpha 5	Approved	gene with protein product			20q13.33	3911	ENSG00000130702	OTTHUMG00000032908	626	Laminin subunits
+HGNC:6486	LAMB1	laminin subunit beta 1	Approved	gene with protein product	CLM		7q31.1	3912	ENSG00000091136	OTTHUMG00000149966	626	Laminin subunits
+HGNC:6487	LAMB2	laminin subunit beta 2	Approved	gene with protein product	LAMS	NPHS5	3p21.31	3913	ENSG00000172037	OTTHUMG00000156807	626	Laminin subunits
+HGNC:6490	LAMB3	laminin subunit beta 3	Approved	gene with protein product	LAMNB1	nicein-125kDa, kalinin-140kDa, BM600-125kDa	1q32.2	3914	ENSG00000196878	OTTHUMG00000036360	626	Laminin subunits
+HGNC:6491	LAMB4	laminin subunit beta 4	Approved	gene with protein product			7q31.1	22798	ENSG00000091128	OTTHUMG00000154874	626	Laminin subunits
+HGNC:6492	LAMC1	laminin subunit gamma 1	Approved	gene with protein product	LAMB2		1q25.3	3915	ENSG00000135862	OTTHUMG00000035418	626	Laminin subunits
+HGNC:6493	LAMC2	laminin subunit gamma 2	Approved	gene with protein product	EBR2, LAMB2T, LAMNB2, EBR2A	nicein-100kDa, kalinin-105kDa, BM600-100kDa	1q25.3	3918	ENSG00000058085	OTTHUMG00000035520	626	Laminin subunits
+HGNC:6494	LAMC3	laminin subunit gamma 3	Approved	gene with protein product		DKFZp434E202	9q34.12	10319	ENSG00000050555	OTTHUMG00000020819	626	Laminin subunits

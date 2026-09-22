@@ -1,0 +1,4 @@
+Figure 5f | Nearest-centroid projection of the GSE152004 states into GSE118761 nasal samples.
+Bars show the proportions with atopy and asthma calculated from the final sample-level assignments.
+Projection used tissue-standardized T2, IFN, and fixed 32-gene repair-ECM scores and Euclidean distance to the GSE152004 E1, E2, and E3 centroids.
+The projection is interpreted as exploratory cross-cohort recapitulation rather than formal validation of clinical endotypes.

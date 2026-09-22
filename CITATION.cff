@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this repository, please cite the manuscript and archived code release."
 title: "Type 2, Interferon, and Repair-ECM Programs Characterize Airway Epithelial Heterogeneity in Childhood Asthma"
 version: "1.0.0"
-date-released: "2026-07-14"
+date-released: "2026-09-19"
 authors:
   - family-names: "Zhang"
     given-names: "Yu-xiang"
@@ -15,3 +15,5 @@ authors:
   - family-names: "Hao"
     given-names: "Chuangli"
 license: "MIT"
+repository-code: "https://github.com/biggsevier24-bot/childhood-asthma-epithelial-programs"
+doi: "10.5281/zenodo.21355485"

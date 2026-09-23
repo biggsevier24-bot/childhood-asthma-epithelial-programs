@@ -60,7 +60,7 @@ Public accession identifiers and required input schemas are documented in `data/
 
 GitHub repository: https://github.com/biggsevier24-bot/childhood-asthma-epithelial-programs
 
-Archived prior release: https://doi.org/10.5281/zenodo.21355485
+Zenodo archived release: https://doi.org/10.5281/zenodo.22897687
 
 The v1.0.0 release passed the complete R test suite (14/14 tests) and the public-data rebuild workflow. The repository contents correspond to the validated v1.0.0 reproducibility release.
 

@@ -2,21 +2,28 @@
 
 Status: READY
 
-- [x] GSE118761 projection rerun from sample-level public-derived inputs.
-- [x] Nasal E1/E2/E3 counts verified as 21/27/7.
-- [x] Tracheal E1/E2/E3 counts verified as 21/23/5.
-- [x] Input hashes, score definitions, scaling parameters, centroids, distances, margins, assignments, and output hashes recorded.
-- [x] Figure 5f source data rebuilt from the final assignment file.
-- [x] Supplementary Table S9 rebuilt from the final assignment file.
-- [x] Supplementary Table S8 audited and unchanged.
-- [x] Manuscript change map generated; manuscript Word file not edited.
-- [x] Clean projection rerun passed.
-- [x] Figure 4 PCA runtime reproduction passed and all locked GSE118761 correlations were recovered.
-- [x] Full public analysis runner completed with exit code 0 using official GEO files supplied through external cache variables.
-- [x] GSE118761 and GSE152004 public-input rebuilds passed without redistributing the cache files.
-- [x] All 14 repository tests passed, including Figure 4 PCA, sample-count, archive-independence, and security tests.
-- [x] GSE152004 score-construction sensitivity reran successfully from the official cached raw-count input.
-- [x] Historical unreproduced projection artifacts isolated under `archive/development_history/`.
-- [x] Privacy, secret, and absolute-path scan passed.
-- [x] Repository manifest regenerated from the frozen contents.
-- [x] Final release ZIP structure, privacy exclusions, and manifest integrity independently verified.
+## Manuscript-wide workflow
+
+- [x] GSE18965, GSE118761, and GSE152004 public-data acquisition and preprocessing interfaces are documented and executable.
+- [x] Fixed repair-ECM, T2, and IFN program definitions and scoring code are included.
+- [x] Correlation, regression, effect-estimate, confidence-interval, PCA, epithelial-state, and phenotype-association workflows are included.
+- [x] Cross-cohort projection is executable from sample-level public-derived inputs with scaling, centroid, distance, assignment, and verification records.
+- [x] Multicollinearity, residualization, alternative score construction, external ECM, overlap-exclusion, matched-random-set, and ssGSEA sensitivity resources are retained.
+- [x] Machine-readable cohort results, figure source data, table source data, and manuscript-to-code maps are included.
+
+## Validation and provenance
+
+- [x] Complete repository test suite passed 14/14.
+- [x] Public-data rebuild workflow completed using official GEO inputs supplied through documented cache interfaces.
+- [x] Deterministic repair-ECM derivation and post-derivation verification passed.
+- [x] Public cohort preprocessing, scoring, PCA, epithelial-state, projection, and statistical workflows passed.
+- [x] Detailed component provenance is retained below the repository root under `docs/provenance/`, `figure_source_data/`, and `audit/`.
+- [x] Superseded development artifacts are isolated under `archive/development_history/` and are not formal pipeline inputs.
+
+## Data protection and release integrity
+
+- [x] Hospital-cohort analysis remains code-only with a variable dictionary, synthetic template, and aggregate outputs.
+- [x] Protected participant-level hospital data are excluded.
+- [x] GSE118761 and GSE152004 raw GEO cache files are excluded.
+- [x] Privacy, credential, secret, and absolute-path scans passed.
+- [x] Repository manifest covers all release files except itself.

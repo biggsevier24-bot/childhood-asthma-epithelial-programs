@@ -1,10 +1,13 @@
 # Changelog
 
-## v1.0.0 GSE118761 projection lock
+## v1.0.0 Complete manuscript-wide reproducibility workflow
 
-The GSE118761 projection workflow replaced historical unreproduced aggregate counts with the fully executable manuscript-aligned projection pipeline.
+- Integrated public-data acquisition and preprocessing for GSE18965, GSE118761, and GSE152004.
+- Included fixed repair-ECM, T2, and IFN program construction and scoring workflows.
+- Included correlations, regression models, confidence intervals, PCA, fixed epithelial states, and cross-cohort projection.
+- Included multicollinearity, residualization, alternative score construction, external ECM, overlap-exclusion, and matched-random-set sensitivity analyses.
+- Provided machine-readable cohort outputs, figure and table source data, provenance records, and a 14-test automated validation suite.
+- Provided hospital-cohort model code, variable definitions, synthetic input structure, and aggregate outputs without participant-level data.
+- Isolated superseded and component-specific development history from the formal end-to-end workflow.
 
-- Superseded audit-only projection aggregates were moved to the development-history archive.
-- Current reproducible workflow target: nasal E1/E2/E3 = 21/27/7; tracheal E1/E2/E3 = 21/23/5.
-- All dependent phenotype summaries, confidence summaries, Figure 5f source data, and Supplementary Table S9 source data are recomputed from sample-level assignments.
-- The manuscript Word file was not modified.
+Detailed component provenance is retained under `docs/provenance/` and `archive/development_history/`.

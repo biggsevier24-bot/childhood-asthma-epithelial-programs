@@ -1,14 +1,13 @@
 Version: v1.0.0
-Final local release frozen: 2026-09-22
-Figure 4 PCA runtime validation passed
-Figure 4 locked correlations passed
-GSE118761 projection workflow locked
-Projection clean rerun passed
-Full clean rerun without archive passed
-All 14 repository tests passed
-run_public_analyses.R passed with exit code 0 using official GEO files supplied through external cache variables
-GSE118761 and GSE152004 public-data rebuilds passed
-GSE152004 score-construction sensitivity passed
-Hospital patient-level analysis remains protected and code-only
-Security and privacy scan passed
+Scope: Complete end-to-end manuscript-wide reproducibility workflow
+Public cohorts: GSE18965, GSE118761, GSE152004
+Complete repository test suite: 14/14 PASS
+Public-data rebuild workflow: PASS
+Deterministic repair-ECM workflow: PASS
+Public cohort preprocessing and scoring workflows: PASS
+PCA, epithelial-state, projection, and statistical workflows: PASS
+Sensitivity and robustness workflows: PASS
+Machine-readable figure and table source data: COMPLETE
+Hospital cohort: CODE_ONLY; protected participant-level data are not included
+Security and privacy scan: PASS
 No manuscript Word file was modified

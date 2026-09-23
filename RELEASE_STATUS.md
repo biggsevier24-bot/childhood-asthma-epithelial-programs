@@ -1,18 +1,17 @@
 # Release status
 
-Status: `FINAL_LOCAL_RELEASE_FROZEN`
+Status: `FINAL_MANUSCRIPT_WIDE_RELEASE_VALIDATED`
 
-Final local v1.0.0 validation completed on 2026-09-22:
+The v1.0.0 release provides the complete, end-to-end, manuscript-wide reproducibility workflow.
 
-- Figure 4 / GSE118761 PCA runtime reproduction: PASS
-- Figure 4 locked correlations: PASS
-- complete repository test suite: 14/14 PASS
-- `run_public_analyses.R`: PASS, exit code 0
-- GSE118761 and GSE152004 public-input rebuilds: PASS using official GEO files supplied through the documented external cache variables
-- GSE118761 projection preparation and deliverables: PASS
-- GSE152004 score-construction sensitivity: PASS
-- external ECM branch: PASS
-- hospital cohort: expected `CODE_ONLY`; protected patient-level data are not included
-- privacy and security scan: PASS
+- Complete repository test suite: 14/14 PASS
+- Public-data rebuild workflow: PASS
+- Deterministic repair-ECM workflow: PASS
+- Public cohort preprocessing and molecular-program scoring: PASS
+- Correlation, regression, PCA, epithelial-state, and projection workflows: PASS
+- Robustness and sensitivity workflows: PASS
+- Machine-readable figure and table source data: COMPLETE
+- Hospital cohort: expected `CODE_ONLY`; protected participant-level data are not included
+- Privacy and security scan: PASS
 
-The external GEO cache files are not redistributed. GitHub upload is intentionally outside this local freeze task.
+Official GSE118761 and GSE152004 cache files remain external and are accessed through the documented cache interfaces. Detailed component-level validation records are retained under `docs/provenance/` and `audit/` without displacing the manuscript-wide workflow from the repository root.

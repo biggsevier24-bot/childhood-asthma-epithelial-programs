@@ -1,60 +1,112 @@
 # Childhood asthma epithelial programs: reproducible analysis repository
 
-This repository contains analysis code and reproducibility materials for the manuscript **“Type 2, Interferon, and Repair-ECM Programs Characterize Airway Epithelial Heterogeneity in Childhood Asthma.”** It covers the three public transcriptomic cohorts retained in the final manuscript (GSE18965, GSE118761, and GSE152004), external ECM sensitivity analyses, and privacy-preserving hospital-cohort analysis templates.
+## Overview
 
-## Reproducibility tiers
+This repository provides the complete, manuscript-wide, end-to-end reproducibility workflow for **“Type 2, Interferon, and Repair-ECM Programs Characterize Airway Epithelial Heterogeneity in Childhood Asthma.”** It connects public data acquisition, preprocessing, molecular-program scoring, statistical analyses, cross-cohort projection, robustness analyses, and machine-readable outputs for GSE18965, GSE118761, and GSE152004. Hospital-cohort code and aggregate outputs are included without participant-level data.
 
-- **Directly rerunnable:** the frozen GSE18965 revision-era deterministic repair-ECM reconstruction, using the deposited Series Matrix, GPL96 annotation snapshot, and fixed annotation resources included here.
-- **Directly rerunnable from GEO:** GSE118761 and GSE152004 download scripts retrieve the deposited count matrices and Series Matrix metadata, then regenerate the VST expression and processed metadata inputs used by the public workflows.
-- **Locked executable GSE118761 projection:** the final workflow recalculates T2, IFN, and fixed repair-ECM scores, tissue-specific projection scaling, GSE152004 centroids, all sample-to-centroid distances, assignments, phenotype summaries, Figure 5f source data, and Supplementary Table S9. Superseded development artifacts are isolated under `archive/development_history/` and are not read by the formal workflow.
-- **Protected-data code only:** hospital analyses include formulas, a variable dictionary, and a synthetic schema; individual-level hospital data are not deposited.
+## Reproducibility workflow
 
-## Repair-ECM module definition in GSE18965
-
-The frozen workflow reads the deposited log2 Series Matrix, maps GPL96 probes, retains the highest-mean probe per gene, builds a 140-gene biological candidate pool, computes expression and Pearson-network features, and applies the frozen deterministic selection rule. The reference 32-gene list is unavailable to derivation scripts and is read only by post-derivation verification.
-
-```bash
-Rscript analysis/01_GSE18965_repair_ECM/06_run_full_derivation.R
-Rscript analysis/01_GSE18965_repair_ECM/07_verify_final_module.R
-```
-
-Expected verification: `DERIVED_N=32`, `OVERLAP_N=32`, and `EXACT_MATCH_32=TRUE`. This is a calibrated revision-era deterministic reconstruction, not a claim that the unknown original historical discovery algorithm was independently recovered.
-
-The strict limma DEG/GO audit is separate from module selection. Reactome ECM Organization and NABA Core Matrisome are external sensitivity definitions and never enter the 32-gene derivation.
-
-## Other public cohorts
-
-- `analysis/02_GSE118761_airway_programs/`: official GEO download and VST preparation, mean gene-wise z scoring, tissue-stratified summaries, PCA, program relationships, IFN-repair quadrants, and the locked nearest-centroid projection under `projection/`.
-- `analysis/03_GSE152004_primary_validation/`: official GEO download and VST preparation, Methods-consistent T2 definition (`>=` cohort median), program scores, logistic models, fixed k=3 states, multicollinearity, residualization, and score-construction sensitivity.
-- `analysis/05_external_ECM_sensitivity/`: Reactome/NABA sensitivity code. Standard ssGSEA is implemented only through the official GSVA package; no in-script ranking fallback is used.
-
-Run the repository-level preflight and all analyses whose inputs are present:
+The repository-level runner performs preflight checks and executes every public-data branch whose required inputs are available:
 
 ```bash
 Rscript run_public_analyses.R
 ```
 
-Final local v1.0.0 validation completed successfully: the recovered Figure 4 PCA workflow reproduced all locked GSE118761 correlations, the complete test suite passed 14/14, and `run_public_analyses.R` completed with all public-analysis branches passing when supplied with the official GEO files through the documented external cache variables. The external cache files are not redistributed. The hospital cohort remains code-only because patient-level clinical data are restricted.
+The workflow is organized in the following order:
 
-If GEO files are not already present, the entry point obtains them from the official NCBI FTP URLs. The optional `*_CACHE` environment variables documented in `data/README.md` permit offline reuse of previously downloaded files. Real hospital data are never run by this entry point.
+1. Acquire deposited public data and construct standardized expression and metadata inputs for GSE18965, GSE118761, and GSE152004.
+2. Construct or score the fixed 32-gene repair-ECM, T2, and IFN programs using the documented cohort-specific procedures.
+3. Run correlations, regression models, effect estimates with confidence intervals, PCA, and fixed k-means epithelial-state analyses.
+4. Project GSE152004 epithelial states into GSE118761 nasal and tracheal samples and evaluate phenotype associations without pooling tissues.
+5. Run multicollinearity, residualization, alternative score-construction, external ECM, overlap-exclusion, and matched-random-set sensitivity analyses.
+6. Write machine-readable model results, figure source data, table source data, provenance records, and automated test outputs.
+7. Expose hospital-cohort model code, variable definitions, input templates, and aggregate outputs while excluding protected participant-level data.
 
-The secondary GSE152004 mean-log2(CPM+1) sensitivity branch uses the deposited raw-count matrix through `analysis/03_GSE152004_primary_validation/00_download_raw_counts.R`. The input is not redistributed in this compact release. When `GSE152004_COUNTS_CACHE` points to the downloaded file, the branch is rerun; otherwise the repository reports the retained machine-readable output as `VERIFIED_OUTPUT_INPUT_NOT_REDISTRIBUTED`. This secondary limitation does not affect the primary VST mean-z analysis.
+Official GEO files can be downloaded by the public-data scripts. The optional cache variables documented in `data/README.md` support offline reuse of official files without redistributing GSE118761 or GSE152004 raw cache inputs.
 
-## Figures and tables
+## Public cohorts and analysis roles
 
-`figures/figure_source_map.tsv` and `tables/table_source_map.tsv` distinguish analysis source data from separately assembled final panels. The supplied PNG files are locked manuscript previews; they are not represented as fully regenerated by the scripts in this release.
+| Cohort | Repository role | Main workflow |
+|---|---|---|
+| GSE18965 | Repair-ECM reconstruction, differential-expression audit, and module scoring | `analysis/01_GSE18965_repair_ECM/` |
+| GSE118761 | Airway program scoring, tissue-stratified associations, PCA, quadrants, and cross-cohort projection | `analysis/02_GSE118761_airway_programs/` |
+| GSE152004 | T2 definition, program scoring, regression, PCA, epithelial states, and sensitivity analyses | `analysis/03_GSE152004_primary_validation/` |
+| Hospital cohort | Protected-data clinical models and aggregate reporting | `analysis/06_hospital_cohort/` |
 
-For the projection, `figures/Figure5/Figure5f_source_data.tsv` and `tables/Supplementary_Table_S9_source.tsv` are generated directly from `outputs/02_GSE118761/projection/GSE118761_projection_assignments_FINAL.tsv`. Exact input hashes, scaling parameters, centroids, distances, and output hashes are retained alongside the projection outputs.
+GSE18965 uses the deposited log2 Series Matrix, GPL96 annotation, highest-mean probe selection, a fixed 140-gene candidate pool, expression and Pearson-network features, and the frozen deterministic rule. The locked 32-gene reference is unavailable to derivation scripts and is used only for post-derivation verification. Strict limma DEG/GO analysis is separate from module selection.
 
-## Figure 4 provenance
+GSE118761 nasal and tracheal samples are processed and analyzed separately. GSE152004 uses the primary VST mean-z branch, the documented three-gene T2 definition, and fixed k=3 epithelial-state analysis. Cohort expression matrices are never merged and cross-cohort ComBat is not used.
 
-Figure 4 PCA provenance is now computationally closed for both public cohorts. GSE152004 source data are reproduced from the canonical repository outputs. For GSE118761, the historical Figure 4 implementation was recovered and validated from the preserved repository input: nasal and tracheal tissues are analyzed separately, genes are ranked by within-tissue variance, the top 2,000 genes are entered into `prcomp(..., center=TRUE, scale.=TRUE)`, and PC1-PC10 are associated with T2, IFN, fixed repair-ECM, atopy, asthma, and wheeze by Spearman correlation.
+## Core analysis modules
 
-The canonical GSE118761 workflow reproduces the manuscript nasal relationships (rounded): PC1-IFN 0.715, PC3-T2 -0.609, PC6-repair-ECM 0.299, PC7-atopy 0.451, and PC9-asthma/wheeze 0.254. Machine-readable PCA scores and the complete PC1-PC10 correlation table are written directly to `figure_source_data/Figure4/`. Pre-closure comparison files are retained only under `archive/development_history/Figure4_GSE118761_PCA_preclosure/`.
+- **Molecular programs:** fixed 32-gene repair-ECM, fixed T2, and fixed IFN definitions are stored under `data/reference_gene_sets/`; shared scoring functions are under `R/common/`.
+- **Core statistics:** cohort-specific correlations, regression models, effect estimates, confidence intervals, and phenotype associations are implemented under `analysis/02_GSE118761_airway_programs/` and `analysis/03_GSE152004_primary_validation/`.
+- **Latent structure and epithelial states:** PCA and fixed k-means analyses use the locked cohort-specific inputs and parameters documented in `config/` and `docs/`.
+- **Cross-cohort projection:** the executable nearest-centroid workflow, including scaling, centroids, distances, assignments, and verification, is under `analysis/02_GSE118761_airway_programs/projection/`.
+- **Hospital models:** public scripts specify the clinical models and table structures; protected individual-level hospital data are not included.
 
-## Data and privacy
+## Robustness and sensitivity analyses
 
-Public accession identifiers and required input schemas are documented in `data/README.md`. Individual-level clinical data are not publicly deposited because of ethical and privacy restrictions. Only a synthetic hospital template and variable dictionary are included.
+The repository retains prespecified multicollinearity and residualization diagnostics, alternative T2 and repair-ECM score construction, Reactome ECM and NABA Core Matrisome analyses, overlap-exclusion analyses, matched-random-set specificity checks, standard GSVA ssGSEA sensitivity, and retained preprocessing comparisons. External ECM definitions are sensitivity analyses and do not enter the fixed 32-gene derivation.
+
+Relevant code and outputs are located under:
+
+- `analysis/03_GSE152004_primary_validation/06_multicollinearity_and_residualization_recovered.R`
+- `analysis/03_GSE152004_primary_validation/08_score_construction_sensitivity.R`
+- `analysis/05_external_ECM_sensitivity/`
+- `outputs/03_GSE152004/`
+- `outputs/05_external_ECM/`
+
+## Machine-readable outputs
+
+- `outputs/`: cohort-level scores, models, PCA, state assignments, projection results, and sensitivity outputs.
+- `figure_source_data/` and `figures/figure_source_map.tsv`: source data and provenance for manuscript figures.
+- `tables/` and `tables/table_source_map.tsv`: machine-readable table source data and generation scripts.
+- `docs/manuscript_to_code_map.tsv`: manuscript-wide analysis-to-code mapping.
+- `audit/`: release gates, independent checks, public-data rebuild records, and security evidence.
+- `docs/provenance/`: detailed component-level provenance reports that are intentionally secondary to the manuscript-wide workflow.
+
+Final panel assembly was performed separately. Locked preview images are not represented as having been regenerated by the analysis scripts unless an explicit figure-generation script is supplied.
+
+## Validation status
+
+- Complete repository test suite: **14/14 PASS**
+- Public-data rebuild workflow: **PASS**
+- Deterministic repair-ECM workflow: **PASS**
+- Public cohort preprocessing and scoring workflows: **PASS**
+- PCA, epithelial-state, projection, and statistical workflows: **PASS**
+- Sensitivity and robustness workflows: **PASS**
+- Machine-readable figure and table source data: **COMPLETE**
+- Hospital cohort: **CODE_ONLY**
+- Privacy and security scan: **PASS**
+
+Run the complete automated test suite with:
+
+```bash
+Rscript tests/run_tests.R
+```
+
+## Data availability and privacy
+
+Public accession identifiers, download interfaces, cache variables, and input schemas are documented in `data/README.md`. GSE18965 inputs required for the deterministic reconstruction are included where redistribution is permitted; official GSE118761 and GSE152004 cache files remain external.
+
+Individual-level hospital data are not deposited because of ethical and privacy restrictions. The repository provides analysis code, a variable dictionary, a synthetic input template, and aggregate reference outputs. Real hospital data are never loaded by `run_public_analyses.R`.
+
+## Repository structure
+
+| Path | Contents |
+|---|---|
+| `analysis/` | End-to-end cohort and sensitivity workflows |
+| `R/` | Repair-ECM derivation and shared R implementation |
+| `config/` | Locked workflow parameters and verification hashes |
+| `data/` | Redistributable inputs, annotations, gene sets, and clinical templates |
+| `outputs/` | Machine-readable analysis results |
+| `figure_source_data/`, `figures/` | Figure source data, maps, and supplied previews |
+| `tables/` | Table source data and generation scripts |
+| `docs/` | Workflow, methods, manuscript mapping, and detailed provenance |
+| `tests/` | Automated repository validation suite |
+| `audit/` | Release-level reproducibility and security evidence |
+| `archive/development_history/` | Superseded development artifacts excluded from formal workflows |
 
 ## Code and archive
 
@@ -62,9 +114,9 @@ GitHub repository: https://github.com/biggsevier24-bot/childhood-asthma-epitheli
 
 Zenodo archived release: https://doi.org/10.5281/zenodo.22897687
 
-The v1.0.0 release passed the complete R test suite (14/14 tests) and the public-data rebuild workflow. The repository contents correspond to the validated v1.0.0 reproducibility release.
+Version: `v1.0.0`
 
-Development artifacts under `archive/` are not required by any formal analysis or test.
+The repository manifest excludes itself from hash validation. Development-history files are not read by formal analysis scripts or tests.
 
 ## License
 

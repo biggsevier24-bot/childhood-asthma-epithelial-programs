@@ -4,7 +4,7 @@ Status: PASS
 
 Scope: complete, end-to-end, manuscript-wide v1.0.0 reproducibility workflow, including public cohort code and outputs, sensitivity analyses, provenance records, tests, and privacy-preserving hospital-cohort materials.
 
-- No user-specific `C:/Users` or project-specific drive path was detected in public text files.
+- No user-specific account path or project-specific drive path was detected in public text files.
 - Local paths in retained historical audit evidence were replaced with neutral provenance placeholders.
 - No API key, password, access token, bearer token, or client-secret pattern was detected.
 - No protected hospital participant-level data were detected. Hospital analysis remains code-only with a synthetic input template and aggregate outputs.

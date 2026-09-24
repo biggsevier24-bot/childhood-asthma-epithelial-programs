@@ -3,7 +3,8 @@ Scope: Complete end-to-end manuscript-wide reproducibility workflow
 Public cohorts: GSE18965, GSE118761, GSE152004
 Complete repository test suite: 14/14 PASS
 Public-data rebuild workflow: PASS
-Deterministic repair-ECM workflow: PASS
+GSE18965 deterministic, code-based repair-ECM derivation: PASS
+Selection-rule transparency: The explicit rule was calibrated against the locked manuscript module membership; derivation code does not load the reference list, which is used only for separate post-derivation verification.
 Public cohort preprocessing and scoring workflows: PASS
 PCA, epithelial-state, projection, and statistical workflows: PASS
 Sensitivity and robustness workflows: PASS

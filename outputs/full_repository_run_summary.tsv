@@ -1,0 +1,9 @@
+analysis	status	key_result	expected	match
+GSE18965 exact32	PASS	completed	successful execution	TRUE
+GSE118761	PASS	completed	successful execution	TRUE
+GSE152004	PASS	completed	successful execution	TRUE
+GSE152004 score construction sensitivity	PASS	N=695; events=348; fixed32=32/32; OR=1.149399531778; P=0.0747957278591	N=695; events=348; fixed32=32/32; canonical OR/CI/P within 1e-10	TRUE
+GSE118761 projection	PASS	completed	successful execution	TRUE
+GSE118761 projection deliverables	PASS	completed	successful execution	TRUE
+External ECM	PASS	completed	successful execution	TRUE
+Hospital cohort	CODE_ONLY	protected patient-level data not public	code and schema only	TRUE

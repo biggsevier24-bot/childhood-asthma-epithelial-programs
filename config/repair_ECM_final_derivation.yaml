@@ -1,5 +1,5 @@
 schema_version: 1
-workflow_name: repair_ECM_revision_era_calibrated_reconstruction
+workflow_name: GSE18965_deterministic_repair_ECM_derivation
 status: frozen
 input:
   dataset: GSE18965
@@ -90,5 +90,8 @@ software:
   R: 4.2.3
   required_packages: base_R_only_for_derivation
 calibration_statement: >-
-  Revision-era deterministic reconstruction calibrated against the fixed
-  manuscript module membership; not the original historical derivation.
+  The explicit selection rule was calibrated against the fixed manuscript
+  module membership. The frozen derivation applies the rule programmatically
+  to GSE18965 annotation, expression, co-expression, clustering, and network
+  features; the reference list is used only by separate post-derivation
+  verification.

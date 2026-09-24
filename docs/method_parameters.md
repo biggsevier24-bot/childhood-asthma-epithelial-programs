@@ -9,4 +9,4 @@
 - ssGSEA: official GSVA implementation only.
 - External ECM definitions never enter the repair-ECM 32-gene derivation.
 
-The complete frozen GSE18965 reconstruction parameters are in `config/repair_ECM_final_derivation.yaml`.
+The complete frozen GSE18965 deterministic derivation parameters are in `config/repair_ECM_final_derivation.yaml`. The explicit selection rule was calibrated against the locked manuscript module membership; the derivation script does not load the reference list.

@@ -32,7 +32,7 @@ run_step("GSE152004",gse152_scripts,character())
 gse152_raw <- file.path(repo, "data/public/GSE152004/raw/GSE152004_695_raw_counts.txt.gz")
 gse152_cache <- Sys.getenv("GSE152004_COUNTS_CACHE", "")
 if (file.exists(gse152_raw) || (nzchar(gse152_cache) && file.exists(gse152_cache))) {
-  run_step(
+  sensitivity_ok <- run_step(
     "GSE152004 score construction sensitivity",
     c(
       "analysis/03_GSE152004_primary_validation/00_download_raw_counts.R",
@@ -40,14 +40,38 @@ if (file.exists(gse152_raw) || (nzchar(gse152_cache) && file.exists(gse152_cache
     ),
     character()
   )
+  alt_path <- file.path(repo, "outputs/03_GSE152004/GSE152004_alternative_repair_recomputed.csv")
+  if (sensitivity_ok) {
+    expected <- list(N=695L, events=348L, repair_genes_expected=32L, repair_genes_used=32L,
+                     beta=0.13923965972929803, OR=1.149399531777976,
+                     CI_low=0.986166548142085, CI_high=1.339651285211802,
+                     p_value=0.0747957278590982)
+    valid <- file.exists(alt_path)
+    if (valid) {
+      alt <- read.csv(alt_path, check.names=FALSE)
+      valid <- nrow(alt)==1L && identical(alt$branch, "canonical_public_rebuild")
+      valid <- valid && all(vapply(names(expected), function(nm) {
+        is.numeric(alt[[nm]]) && length(alt[[nm]])==1L && abs(alt[[nm]]-expected[[nm]])<1e-10
+      }, logical(1)))
+    }
+    if (!valid) {
+      rows[[length(rows)]]$status <- "FAIL"
+      rows[[length(rows)]]$key_result <- "canonical sensitivity output missing or failed locked numeric checks"
+      rows[[length(rows)]]$expected <- "N=695; events=348; fixed32=32/32; canonical OR/CI/P within 1e-10"
+      rows[[length(rows)]]$match <- FALSE
+    } else {
+      rows[[length(rows)]]$key_result <- sprintf("N=%d; events=%d; fixed32=%d/%d; OR=%.12f; P=%.12g",
+        alt$N, alt$events, alt$repair_genes_used, alt$repair_genes_expected, alt$OR, alt$p_value)
+      rows[[length(rows)]]$expected <- "N=695; events=348; fixed32=32/32; canonical OR/CI/P within 1e-10"
+    }
+  }
 } else {
-  verified <- file.path(repo, "outputs/03_GSE152004/GSE152004_alternative_repair_verified_output.csv")
   rows[[length(rows) + 1L]] <- data.frame(
     analysis = "GSE152004 score construction sensitivity",
-    status = "VERIFIED_OUTPUT_INPUT_NOT_REDISTRIBUTED",
-    key_result = if (file.exists(verified)) "retained machine-readable output verified" else "verified output missing",
-    expected = "secondary sensitivity; official raw-count URL and download script provided",
-    match = file.exists(verified)
+    status = "FAIL",
+    key_result = "official raw-count input/cache unavailable; canonical sensitivity not rebuilt",
+    expected = "official raw-count cache required for canonical public-rebuild validation",
+    match = FALSE
   )
 }
 run_step("GSE118761 projection",sprintf("analysis/02_GSE118761_airway_programs/projection/%02d_%s.R",1:8,c("prepare_projection_inputs","calculate_projection_features","build_reference_centroids","assign_nearest_centroid","summarize_projection_counts","summarize_projection_phenotypes","generate_projection_source_data","verify_projection_results")),c("config/GSE118761_projection_final.yaml"))

@@ -28,12 +28,12 @@ Official GEO files can be downloaded by the public-data scripts. The optional ca
 
 | Cohort | Repository role | Main workflow |
 |---|---|---|
-| GSE18965 | Repair-ECM reconstruction, differential-expression audit, and module scoring | `analysis/01_GSE18965_repair_ECM/` |
+| GSE18965 | Deterministic, code-based derivation of the repair-ECM module, differential-expression audit, and module scoring | `analysis/01_GSE18965_repair_ECM/` |
 | GSE118761 | Airway program scoring, tissue-stratified associations, PCA, quadrants, and cross-cohort projection | `analysis/02_GSE118761_airway_programs/` |
 | GSE152004 | T2 definition, program scoring, regression, PCA, epithelial states, and sensitivity analyses | `analysis/03_GSE152004_primary_validation/` |
 | Hospital cohort | Protected-data clinical models and aggregate reporting | `analysis/06_hospital_cohort/` |
 
-GSE18965 uses the deposited log2 Series Matrix, GPL96 annotation, highest-mean probe selection, a fixed 140-gene candidate pool, expression and Pearson-network features, and the frozen deterministic rule. The locked 32-gene reference is unavailable to derivation scripts and is used only for post-derivation verification. Strict limma DEG/GO analysis is separate from module selection.
+A deterministic, code-based workflow was applied in GSE18965 to derive the fixed 32-gene repair-ECM module. It uses prespecified biological annotations, the AA-HN expression contrast, co-expression structure, hierarchical clustering, network-based filtering, and explicit programmatic selection rules; no manual gene-name overrides or post hoc truncation are used. The derivation script does not load the reference list, which is used by a separate post-derivation verification step. Strict limma DEG/GO analysis is separate from module selection.
 
 GSE118761 nasal and tracheal samples are processed and analyzed separately. GSE152004 uses the primary VST mean-z branch, the documented three-gene T2 definition, and fixed k=3 epithelial-state analysis. Cohort expression matrices are never merged and cross-cohort ComBat is not used.
 
@@ -72,7 +72,7 @@ Final panel assembly was performed separately. Locked preview images are not rep
 
 - Complete repository test suite: **14/14 PASS**
 - Public-data rebuild workflow: **PASS**
-- Deterministic repair-ECM workflow: **PASS**
+- GSE18965 deterministic, code-based repair-ECM derivation: **PASS**
 - Public cohort preprocessing and scoring workflows: **PASS**
 - PCA, epithelial-state, projection, and statistical workflows: **PASS**
 - Sensitivity and robustness workflows: **PASS**
@@ -88,7 +88,7 @@ Rscript tests/run_tests.R
 
 ## Data availability and privacy
 
-Public accession identifiers, download interfaces, cache variables, and input schemas are documented in `data/README.md`. GSE18965 inputs required for the deterministic reconstruction are included where redistribution is permitted; official GSE118761 and GSE152004 cache files remain external.
+Public accession identifiers, download interfaces, cache variables, and input schemas are documented in `data/README.md`. GSE18965 inputs required for the deterministic derivation are included where redistribution is permitted; official GSE118761 and GSE152004 cache files remain external.
 
 Individual-level hospital data are not deposited because of ethical and privacy restrictions. The repository provides analysis code, a variable dictionary, a synthetic input template, and aggregate reference outputs. Real hospital data are never loaded by `run_public_analyses.R`.
 

@@ -6,7 +6,7 @@ GSE152004_events348	True	events=[348]
 GSE152004_repair_OR	True	OR=0.542309473212322
 GSE152004_IFN_OR	True	OR=0.770617570602221
 GSE152004_states	True	counts=[338, 299, 58]
-alternative_repair_OR	True	OR=1.163873208
+alternative_repair_OR	True	canonical_OR=1.149399531777976; P=0.0747957278590982; historical_IFN_branch_OR=1.163873208 is provenance-only
 GSE118761_sample_counts	True	n=104, nasal=55, tracheal=49
 projection_nasal	True	{'E1': 21, 'E2': 27, 'E3': 7}
 projection_tracheal	True	{'E1': 21, 'E2': 23, 'E3': 5}

@@ -112,7 +112,7 @@ Individual-level hospital data are not deposited because of ethical and privacy 
 
 GitHub repository: https://github.com/biggsevier24-bot/childhood-asthma-epithelial-programs
 
-Zenodo archived release: https://doi.org/10.5281/zenodo.22897687
+Zenodo archived release: https://doi.org/10.5281/zenodo.22917874
 
 Version: `v1.0.0`
 
